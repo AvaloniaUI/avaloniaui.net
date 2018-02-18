@@ -1,9 +1,3 @@
-<style>
-    img {
-        width: 100%;
-    }
-</style>
-
 # Getting Started with Rider
 
 ### Note that we don't currently have an extension for Jetbrains Rider, so you will need to initialize and scaffold our project by hand.
