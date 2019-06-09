@@ -9,7 +9,7 @@ and child controls will inherit this data context.
 
 When using the MVVM pattern, the data context will usually be an instance of a view model.
 
-If you created your application with the [Avalonia MVVM Application](create-new-project.md) template
+If you created your application with the [Avalonia MVVM Application](/docs/tutorial/creating-the-project) template
 then you will see something like this in your `Program.cs` file:
 
 ```csharp
