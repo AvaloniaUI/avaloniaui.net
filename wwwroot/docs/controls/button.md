@@ -12,6 +12,10 @@ can be assigned or bound to the button's [`Command`](/api/Avalonia.Controls/Butt
 property. This command will be executed when the button is clicked. For more information see
 [binding to commands](/docs/binding/binding-to-commands.md).
 
+[`Click`](/api/Avalonia.Controls/Button/61B1E7A8) is just one of several events that Buttons have.  Another example is [`PointerEnter`](/api/Avalonia.Input/InputElement/B4FED8A5) or [`PointerLeave`](/api/Avalonia.Input/InputElement/0ABE1887).  You can get the full list of Button Events [here](/api/Avalonia.Controls/Button/#Events).
+
+The Button control's full documentation can be found [here](/api/Avalonia.Controls/Button){target="_blank"}
+
 # Common Properties
 
 |Property|Description|
@@ -67,3 +71,72 @@ produces following output with **Windows 10**
 ```
 produces following output with **Windows 10**  
 ![Basic button](images/button_colors.png)
+
+ ## Binding to a View Model Command
+ It is possible to bind a view model command to a simple method or with a ReactiveCommand. There are lots of advantages to the ReactiveCommand binding for all but the simplest user interfaces such as being able to pass an `IObservable<bool>` object in to have it dynamically calculate state.  Both methods are displayed below.  First the "simple" method binding:
+ 
+```xml
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaAppTemplate.MainWindow"
+        Title="AvaloniaAppTemplate">
+    <StackPanel>
+        <Button Width="160" Command="{Binding OnClickCommand}">My Button</Button>
+    </StackPanel>
+</Window>
+```
+
+The Code in the bound View Model for the above will either look like:
+```cs
+public void OnClickCommand()
+{
+	// do something
+}
+```
+
+If using ReactiveCommands:
+```cs
+public MainWindowViewModel()
+{
+	OnClickCommand = ReactiveCommand.Create(() => { /* do something */ });
+}
+
+public ReactiveCommand OnClickCommand { get; }
+```
+
+ ## Binding to Events
+ 
+```xml
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaAppTemplate.MainWindow"
+        Title="AvaloniaAppTemplate">
+    <StackPanel>
+        <Button Width="160" 
+                Click="OnButtonClick"
+                PointerEnter="OnPointerEnter"
+                Content="My Button"/>
+    </StackPanel>
+</Window>
+```
+The corresponding C# code in the View's cs file:
+```cs
+private void OnButtonClick(object sender, RoutedEventArgs e)
+{
+	//do something on click
+}
+
+private void OnPointerEnter(object sender, PointerEventArgs e)
+{
+	//do something when pointer enters
+}
+```
+
+
+
