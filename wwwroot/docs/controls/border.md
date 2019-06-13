@@ -33,3 +33,6 @@ An example of a border with a red background, 2 pixel black border, 3 pixel corn
 # Pseudoclasses
 
 None
+
+# Source code
+[Border.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Border.cs)
