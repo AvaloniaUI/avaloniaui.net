@@ -206,3 +206,7 @@ Finally assign the bindings to the view model in a `Style` within the menu:
     </Menu.Styles>
 </Menu>
 ```
+
+# Source code
+[Menu.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Menu.cs)
+

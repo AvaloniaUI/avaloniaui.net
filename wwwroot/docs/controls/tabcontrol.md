@@ -87,3 +87,5 @@ The grey part is the `TabItem`... Yes, the `TabItem` includes the tab **AND** th
 </Window.Styles>
 ```
 
+# Source code
+[TabControl.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/TabControl.cs)
