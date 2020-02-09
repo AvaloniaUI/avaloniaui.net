@@ -127,7 +127,7 @@ relationship (`TodoListView` is a child of `MainWindow`). This might give us a c
 Edit the `MainWindowViewModel.cs` file to look like this:
 
 :::filename
-App.xaml.cs
+MainWindowViewModel
 :::
 ```csharp
 using Todo.Services;
