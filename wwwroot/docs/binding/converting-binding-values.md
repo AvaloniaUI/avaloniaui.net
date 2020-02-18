@@ -69,7 +69,7 @@ Avalonia supplies a number of built-in value converters for common scenarios:
 | Converter | Description |
 | ---- | ----------- |
 | `StringConverters.IsNullOrEmpty` | Returns `true` if the input string is null or empty |
-| `StringConverters.IsNOtNullOrEmpty` | Returns `false` if the input string is null or empty |
+| `StringConverters.IsNotNullOrEmpty` | Returns `false` if the input string is null or empty |
 | `ObjectConverters.IsNull` | Returns `true` if the input is null |
 | `ObjectConverters.IsNotNull` | Returns `false` if the input is null |
 | `BoolConverters.And` | A multi-value converter that returns `true` if all inputs are true. |
