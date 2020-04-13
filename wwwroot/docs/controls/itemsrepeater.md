@@ -11,6 +11,6 @@ https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.itemsrepeate
 The only difference between the two controls is that in Avalonia the `ItemsSource` is called `Items`.
 
 # Source code
-[Expander.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Expander.cs)
+[ItemsRepeater.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Repeater/ItemsRepeater.cs)
 
 
