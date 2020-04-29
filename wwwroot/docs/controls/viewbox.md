@@ -1,6 +1,45 @@
 Title: Viewbox
 ---
-`Viewbox` is used to scale single child.
+The `Viewbox` is a decorator control and is used to scale single child.
+It can be used to **scale its child to fit** to the available space.
 
+Though it can be used for any kind of control, it is often used to scale 2D images to a given space.
+
+The `Viewbox` gives its child infinite space in the measure phase. It will constrain either or both sides when aranging it.
+This depends on the Value of the `Stretch` property.
+
+Here is an example of a button scaled up to fit the given space. Despite the button would have
+been rendered about 22 dip high, it will effectively be displayed about 300 dip high:
+
+```xml
+<!-- button will occupy 22 dip under usual font sizes and dpi setting -->
+<Button Content="Text"/>  
+
+<!-- this button will be much larger -->
+<Viewbox Stretch="Uniform" Height="300">
+	<Button Content="Text"/>
+</Viewbox>
+```
+
+# Common Properties
+
+|Property|Description|
+|--------|-----------|
+|`Stretch`|One of the following values, determining the mode of scaling.|
+
+## Values for `Stretch`
+|Value|Description|
+|--------|-----------|
+|None    |The content preserves its original size.|
+|Fill    |The content is resized to fill the destination dimensions. The aspect ratio is not preserved.|
+|Uniform |The content is resized to fit in the destination dimensions while preserving its native aspect ratio.|
+|UniformToFill|The content is resized to completely fill the destination rectangle while preserving
+               its native aspect ratio. A portion of the content may not be visible if the aspect
+			   ratio of the content does not match the aspect ratio of the allocated space.|
+		
+
+# Pseudoclasses
+
+None
 # Source code
 [Viewbox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Viewbox.cs)
