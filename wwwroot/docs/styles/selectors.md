@@ -107,6 +107,22 @@ new Style(x => x.OfType<Button>().PropertyEquals(Button.IsDefaultProperty, true)
 
 Matches any control which has the specified property set to the specified value.
 
+Not: If this specified condition is met and there is already a style with a selector with for instance `"Button"`
+this style will be applied in addition to that style and properties will override. So, if the condition is not met anymore,
+it basically falls back to the later style. That just the hierachical add-up way the styling system works. 
+
+# PropertyEquals with Class
+
+```xml
+<Style Selector="Button.red[IsPressed=true]">
+```
+```csharp
+new Style(x => x.OfType<Button>().Class("red").PropertyEquals(Button.IsPressedProperty, true));
+```
+
+Matches any `Button` which matches the specified class and has the `IsPressed` property set.
+
+
 # Template
 
 ```xml
@@ -131,4 +147,4 @@ new Style(x => x.Not(y => y.Class("h1")));
 new Style(x => x.OfType<TextBlock>().Not(y => y.Class("h1")));
 ```
 
-Negates an inner selector.
+Negates an inner selector. That is: It matches `TextBlock` positive but `h1` negative.
