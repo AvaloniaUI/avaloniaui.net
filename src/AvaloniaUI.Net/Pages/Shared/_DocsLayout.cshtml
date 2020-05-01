@@ -1,0 +1,21 @@
+@* Layout for docs and blogs *@
+<!DOCTYPE html>
+<html lang="en">
+<partial name="_Head.cshtml"/>
+
+<body>
+  <div class="page docs">
+    <partial name="_Navbar.cshtml" model='"bg"' />
+    <div class="toc">
+      <h1 class="expander">@RenderSection("Title")</h1>
+      <div class="toc-content">
+        <div class="scroll-container" data-simplebar data-simplebar-auto-hide="false">
+          @RenderSection("TableOfContents")
+        </div>
+      </div>
+    </div>
+    @RenderBody()
+    <partial name="_Footer.cshtml" />
+  </div>
+</body>
+</html>

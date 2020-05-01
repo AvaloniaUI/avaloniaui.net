@@ -1,0 +1,59 @@
+/* Default sidebar leaves space for hamburger menu bar, but hero sidebar doesn't */
+.hero-container .sidebar {
+  margin-top: 0;
+}
+
+/* Default sidebar hides logo on narrow layouts, but hero sidebar doesn't */
+.hero-container .sidebar .avalonia-logo {
+  display: inline-block;
+  margin: -14px 0 var(--padding-small) 2px;
+}
+
+
+.hero-content {
+  background-image: url(/images/down-chevron.svg);
+  background-position: bottom calc(var(--padding-large) / 3) center;
+  background-repeat: no-repeat;
+  background-size: auto calc(var(--padding-large) / 3);
+  padding: var(--padding-large);
+}
+
+.hero-content .center {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.hero-content .two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.hero-content .two-column > * {
+  padding: var(--padding-small);
+}
+
+/* Display hero section in 2 columns if > 1024px */
+
+@media (min-width: 1025px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .hero-content {
+    padding-top: var(--nav-height);
+  }
+
+  .hero-content .two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+  }
+}

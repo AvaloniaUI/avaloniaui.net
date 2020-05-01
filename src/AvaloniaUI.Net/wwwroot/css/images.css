@@ -1,0 +1,11 @@
+.avalonia-logo {
+  display: inline-block;
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+  .avalonia-logo.large {
+    width: 160px;
+    height: 160px;
+  }

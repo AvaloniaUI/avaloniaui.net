@@ -1,0 +1,60 @@
+@page "/blog/{*url}"
+@model AvaloniaUI.Net.Pages.Blog.IndexModel
+
+@using Westwind.AspNetCore.Markdown;
+
+@{
+  ViewData["Title"] = "Avalonia Blog";
+  Layout = "_DocsLayout";
+}
+
+@section Title {
+  <span class="white">avalonia</span> blog
+}
+
+@section TableOfContents {
+  @if (Model.RecentPosts?.Any() == true)
+  {
+    <h2>Recent Posts</h2>
+
+    <ul class="recent-blog-posts">
+      @foreach (var i in Model.RecentPosts)
+      {
+        var classes = i.IsSelected ? "selected" : string.Empty;
+        <li class="@classes"><a href="@i.Url">@i.Title</a></li>
+      }
+
+      <li><a href="~/blog/all">All Posts...</a></li>
+    </ul>
+  }
+}
+
+@if (Model.Article is object)
+{
+  <article class="blog-post">
+    <h1>@Model.Article.Title</h1>
+    <dl>
+      @if (Model.Article.FrontMatter?.Published.HasValue == true)
+      {
+        <dt class="icon">Published</dt>
+        <dd class="icon date">@Model.Article.FrontMatter.Published!.Value.ToString("yyyy-MM-dd")</dd>
+      }
+
+      @if (Model.Article.FrontMatter?.Author is object)
+      {
+        <dt class="icon">Author</dt>
+        <dd class="icon person">@Model.Article.FrontMatter?.Author</dd>
+      }
+
+      @if (Model.Article.FrontMatter?.Categories is object)
+      {
+        <dt class="icon">Category</dt>
+        foreach (var category in Model.Article.FrontMatter.Categories)
+        {
+          <dd class="icon category">@category</dd>
+        }
+      }
+    </dl>
+    @Markdown.ParseHtmlString(Model.Article.Markdown)
+  </article>
+}

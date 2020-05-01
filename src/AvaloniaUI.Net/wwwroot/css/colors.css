@@ -1,0 +1,32 @@
+.bg-gray1 {
+  background: var(--gray1)
+}
+
+.bg-gray2 {
+  background: var(--gray2)
+}
+
+.bg-gray3 {
+  background: var(--gray3)
+}
+
+.bg-gray4 {
+  background: var(--gray4)
+}
+
+.white {
+  color: white;
+}
+
+.purple-gradient {
+  background: linear-gradient(90deg, var(--dark-purple), var(--bright-purple));
+  color: white;
+}
+
+  .purple-gradient h1 {
+    color: white;
+  }
+
+.gray-gradient {
+  background: linear-gradient(45deg, white, var(--gray3));
+}

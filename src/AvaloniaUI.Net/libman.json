@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "highlight.js@9.18.1",
+      "destination": "wwwroot/lib/highlight.js/",
+      "files": [
+        "highlight.min.js",
+        "styles/vs2015.min.css",
+        "languages/cs.min.js",
+        "languages/fsharp.min.js",
+        "languages/xml.min.js",
+        "languages/powershell.min.js"
+      ]
+    },
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "anchor-js@4.2.2",
+      "destination": "wwwroot/lib/anchor-js/",
+      "files": [
+        "anchor.min.js"
+      ]
+    },
+    {
+      "library": "simplebar@5.1.0",
+      "destination": "wwwroot/lib/simplebar/"
+    },
+    {
+      "library": "slick-carousel@1.9.0",
+      "destination": "wwwroot/lib/slick-carousel/",
+      "files": [
+        "slick.min.js",
+        "slick.min.css",
+        "slick-theme.min.css",
+        "fonts/slick.woff"
+      ]
+    },
+    {
+      "library": "magnific-popup.js@1.1.0",
+      "destination": "wwwroot/lib/magnific-popup.js/",
+      "files": [
+        "jquery.magnific-popup.min.js",
+        "magnific-popup.min.css"
+      ]
+    }
+  ]
+}

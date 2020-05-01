@@ -1,0 +1,55 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <environment include="Development">
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/vars.css">
+    <link rel="stylesheet" href="~/css/base.css">
+    <link rel="stylesheet" href="~/css/colors.css">
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link rel="stylesheet" href="~/css/images.css">
+    <link rel="stylesheet" href="~/css/navbar.css">
+    <link rel="stylesheet" href="~/css/hero.css">
+    <link rel="stylesheet" href="~/css/sidebar.css">
+    <link rel="stylesheet" href="~/css/treeview.css">
+    <link rel="stylesheet" href="~/css/content.css">
+    <link rel="stylesheet" href="~/css/docs.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+    <link rel="stylesheet" href="~/lib/highlight.js/styles/vs2015.min.css">
+    <link rel="stylesheet" href="~/lib/magnific-popup.js/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/lib/simplebar/simplebar.min.css">
+    <link rel="stylesheet" href="~/lib/slick-carousel/slick.min.css">
+    <link rel="stylesheet" href="~/lib/slick-carousel/slick-theme.min.css">
+  </environment>
+  <environment exclude="Development">
+    <link rel="stylesheet" href="~/css/site.min.css">
+  </environment>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css">
+  <environment include="Development">
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/anchor-js/anchor.min.js"></script>
+    <script src="~/lib/highlight.js/highlight.min.js"></script>
+    <script src="~/lib/highlight.js/languages/fsharp.min.js"></script>
+    <script src="~/lib/highlight.js/languages/powershell.min.js"></script>
+    <script src="~/lib/highlight.js/languages/xml.min.js"></script>
+    <script src="~/lib/magnific-popup.js/jquery.magnific-popup.min.js"></script>
+    <script src="~/lib/simplebar/simplebar.min.js"></script>
+    <script src="~/lib/slick-carousel/slick.min.js"></script>
+    <script src="~/js/site.js"></script>
+  </environment>
+  <environment exclude="Development">
+    <script src="~/js/site.min.js"></script>
+  </environment>
+  <title>@ViewData["Title"]</title>
+
+  <noscript>
+    <style>
+      /** Reinstate scrolling for non-JS clients */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+</head>

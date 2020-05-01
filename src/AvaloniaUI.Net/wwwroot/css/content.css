@@ -1,0 +1,102 @@
+.content, article.docs, article.blog-post {
+  /*
+    IMPORTANT! Without this <pre> tages overflow. See https://css-tricks.com/preventing-a-grid-blowout/
+    for more info
+  */
+  min-width: 0;
+}
+
+  .content section {
+    padding: var(--padding-large);
+  }
+
+    .content section h1:not(.with-img) {
+      margin-top: 0;
+    }
+
+  .content .threee-columns section a.button {
+    align-self: flex-start;
+    margin-top: var(--padding-small);
+    font-size: 1.32rem;
+  }
+
+article {
+  padding: var(--padding-large);
+}
+
+  article img {
+    margin: 12px auto;
+  }
+
+.note {
+  background-color: var(--note-bg);
+  border-left-color: var(--note-border);
+  border-left-width: 9px;
+  border-left-style: solid;
+  margin: 40px 0 30px 0;
+  padding: 1px 45px 20px 26px;
+}
+
+  .note > p:first-child::before {
+    content: "Note";
+    display: block;
+    font-weight: 700;
+  }
+
+.filename {
+  background: #1E1E1E;
+  border-radius: 4px 4px 0 0;
+  color: #DCDCDC;
+  padding: 8px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin: 1em 0 -3px 0;
+}
+
+  .filename p {
+    display: inline;
+  }
+
+  .filename + pre {
+    margin-top: 0;
+  }
+
+.featured-product img {
+  max-height: 580px;
+}
+
+@media (min-width: 1024px) {
+  /* Display sidebar as a column if > 1024px */
+  .sidebar-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+    .sidebar-container .sidebar .avalonia-logo {
+      display: inline-block;
+    }
+
+    .sidebar-container .content {
+      grid-column: 2;
+    }
+
+  .hero-content {
+    padding-top: var(--nav-height);
+  }
+
+  /* Display featured product in columns if > 1024px */
+  .featured-product {
+      display:grid;
+      grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* 3 column section if > 1440px */
+
+@media (min-width: 1440px) {
+  .three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

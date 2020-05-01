@@ -1,0 +1,28 @@
+:root {
+  --gray1: rgb(230, 230, 230);
+  --gray2: rgb(242, 242, 242);
+  --gray3: rgb(179, 179, 179);
+  --gray4: rgb(204, 204, 204);
+  --bright-purple: rgb(140, 69, 171);
+  --dark-purple: rgb(97, 48, 120);
+  --green: rgb(0, 197, 150);
+  --note-bg: rgba(255, 229, 100, 0.3);
+  --note-border: rgba(255, 229, 100, 0.3);
+  --padding-large: 90px;
+  --padding-small: 30px;
+  --padding-xsmall: 10px;
+  --negative-padding-small: -30px;
+  --max-page-width: 1920px;
+  --nav-height: 90px;
+}
+
+/* Reduce padding if width < 425px */
+
+@media (max-width: 425px) {
+  :root {
+    --padding-large: 30px;
+    --padding-small: 20px;
+    --padding-xsmall: 10px;
+    --negative-padding-small: -20px;
+  }
+}

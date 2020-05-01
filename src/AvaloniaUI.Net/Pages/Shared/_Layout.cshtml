@@ -1,0 +1,25 @@
+@* Layout for pages with a hero section, such as index and support *@
+<!DOCTYPE html>
+<html lang="en">
+<partial name="_Head.cshtml" />
+
+<body>
+  <partial name="_Navbar.cshtml" model='"scroll-listener"'/>
+
+  <div class="page">
+    <div class="hero-container">
+      <div class="sidebar @(ViewData["SidebarBackground"] ?? "gray-gradient")">
+        <a class="avalonia-logo large" href="/">Homepage</a>
+        @RenderSection("Sidebar")
+      </div>
+      <div class="hero-content">
+        @RenderSection("HeroContent")
+      </div>
+    </div>
+    <div class="content">
+      @RenderBody()
+    </div>
+    <partial name="_Footer.cshtml" />
+  </div>
+</body>
+</html>

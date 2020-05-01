@@ -1,0 +1,39 @@
+.tree-view {
+  font-size: 1rem;
+}
+
+  .tree-view > ul {
+    padding-left: 0;
+  }
+
+  .tree-view li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+  }
+
+  .tree-view li .expander::before {
+    display: inline-block;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0da";
+  }
+
+  .tree-view li.expanded .expander::before {
+    transform: rotate(90deg);
+  }
+
+  .tree-view ul,
+  .tree-view li {
+    list-style-type: none;
+  }
+
+    .tree-view li.selected > a.header {
+      background-color: var(--green);
+      font-weight: bold;
+    }
+
+    .tree-view li:not(.expanded) ul {
+      display: none;
+    }

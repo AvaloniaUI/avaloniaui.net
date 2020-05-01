@@ -1,0 +1,41 @@
+[
+    {
+        "outputFileName": "wwwroot/css/site.min.css",
+        "inputFiles": [
+            "wwwroot/css/normalize.css",
+            "wwwroot/css/vars.css",
+            "wwwroot/css/base.css",
+            "wwwroot/css/colors.css",
+            "wwwroot/css/layout.css",
+            "wwwroot/css/images.css",
+            "wwwroot/css/navbar.css",
+            "wwwroot/css/hero.css",
+            "wwwroot/css/sidebar.css",
+            "wwwroot/css/treeview.css",
+            "wwwroot/css/content.css",
+            "wwwroot/css/docs.css",
+            "wwwroot/css/footer.css",
+            "wwwroot/lib/**/*.css"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/site.min.js",
+        "inputFiles": [
+            "wwwroot/lib/jquery/jquery.min.js",
+            "wwwroot/lib/anchor-js/anchor.min.js",
+            "wwwroot/lib/highlight.js/highlight.min.js",
+            "wwwroot/lib/highlight.js/languages/fsharp.min.js",
+            "wwwroot/lib/highlight.js/languages/powershell.min.js",
+            "wwwroot/lib/highlight.js/languages/xml.min.js",
+            "wwwroot/lib/magnific-popup.js/jquery.magnific-popup.min.js",
+            "wwwroot/lib/simplebar/simplebar.min.js",
+            "wwwroot/lib/slick-carousel/slick.min.js",
+            "wwwroot/js/site.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        },
+        "sourceMap": false
+    }
+]

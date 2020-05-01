@@ -1,30 +1,15 @@
-queue:
-  name: Hosted VS2017
+pool:
+  vmImage: 'ubuntu-18.04'
 
 steps:
-- task: DotNetCoreInstaller@0
+- task: UseDotNet@2
   inputs:
-    packageType: 'sdk'
-    version: '2.2.100' 
-
-- script: 'dotnet tool install -g Wyam.Tool --version 2.1.1'
-
-- script: 'wyam -i wwwroot'
-  failOnStderr: true
-  displayName: 'Generate website with Wyam'
-  env:
-    SKIP_WYAM_API_GEN: '0'
-
-# Copy Files
-- task: CopyFiles@2
+    version: '3.1.x'
+- task: DotNetCoreCLI@2
+  displayName: Build
   inputs:
-    displayName: 'Copy output to Artifacts'
-    sourceFolder: '$(Build.SourcesDirectory)\output'
-    contents: '**\*'
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: Wyam output'
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-  condition: and(succeeded(), eq(variables['System.PullRequest.IsFork'], false))
+    command: publish
+    projects: 'AvaloniaUI.Net.sln'
+    arguments: '-c Release -o publish'
+    modifyOutputPath: false
+    zipAfterPublish: false

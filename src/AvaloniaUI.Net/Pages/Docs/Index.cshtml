@@ -1,0 +1,41 @@
+@page "/docs/{*url}"
+
+@using AvaloniaUI.Net.Models
+@using Westwind.AspNetCore.Markdown;
+
+@model AvaloniaUI.Net.Pages.Docs.IndexModel
+@{
+  ViewData["Title"] = "Avalonia Docs";
+  Layout = "_DocsLayout";
+}
+
+@section Title {
+  <span class="white">avalonia</span> docs
+}
+
+@section TableOfContents {
+  @if (Model.Index is object)
+  {
+    <partial name="_TreeView.cshtml" for="Index" />
+  }
+}
+
+<article class="docs">
+  @if (Model.Article is object)
+  {
+    <h1>@Model.Article.Title</h1>
+    @Markdown.ParseHtmlString(Model.Article.Markdown, sanitizeHtml: true)
+  }
+
+  @if (Model.SectionIndex?.Count > 0)
+  {
+    <h2>In This Section</h2>
+
+    <ul>
+      @foreach (var i in Model.SectionIndex)
+      {
+        <li><a href="@i.Url">@i.Title</a></li>
+      }
+    </ul>
+  }
+</article>

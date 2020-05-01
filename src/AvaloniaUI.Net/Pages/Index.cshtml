@@ -1,0 +1,175 @@
+@page
+@model IndexModel
+@{
+  ViewData["Title"] = "Avalonia UI Framework";
+  ViewData["SidebarBackground"] = "purple-gradient";
+}
+
+@section Sidebar {
+  <h1>avalonia</h1>
+  <p>
+    A cross platform XAML Framework for .NET Framework, .NET Core and Mono.
+  </p>
+
+  <ul class="button-bar">
+    <li><a class="button" href="/docs/quickstart">Get started</a>
+    <li><a class="button" href="/support">Get support</a>
+  </ul>
+}
+
+@section HeroContent {
+  <div class="center">
+    <img class="hero-image" src="/images/heroes/homepage.svg">
+  </div>
+}
+
+<div class="three-columns">
+  <section id="xaml" class="bg-gray1 dock-grid">
+    <div class="dock-center">
+      <h1 class="with-img">XAML <img src="/images/home/xaml.svg"></h1>
+      <p><strong>Avalonia uses a XAML dialect that should feel immediately familiar to anyone coming from WPF, UWP and Xamarin Forms.</strong>
+      <p>Avalonia supports binding, MVVM, lookless controls and data templates just as you’d expect from a XAML framework.</p>
+    </div>
+    <a class="button dock-bottom" href="/docs/quickstart/xaml">Find out more</a>
+  </section>
+
+  <section id="xplat" class="bg-gray2 dock-grid">
+    <div class="dock-center">
+      <h1 class="with-img">Cross platform <img src="/images/home/xplat.svg"></h1>
+      <p><strong>We support Windows, Linux and OSX with experimental mobile support for Android and iOS.</strong>
+      <p>We currently have Win32, GTK3 and MonoMac windowing backends plus Direct2D and Skia renderers.</p>
+    </div>
+    <a class="button dock-bottom" href="/docs/quickstart">Find out more</a>
+  </section>
+
+  <section id="oss" class="bg-gray1 dock-grid">
+    <div class="dock-center">
+      <h1 class="with-img">Open Source <img src="/images/home/oss.svg"></h1>
+      <p><strong>Avalonia is developed by a global community of enthusiasts in our GitHub repository and in our gitter channel.</strong>
+      <p>Everything is done in the open and we’re always looking for new contributors. Drop by and say hi!</p>
+    </div>
+    <a class="button dock-bottom" href="/contributing">Find out more</a>
+  </section>
+</div>
+
+<section id="getting-started" class="with-img-right-responsive">
+  <h1>Getting started</h1>
+  <div>
+    <p>
+      See our quickstart guide for information on how to get started with Avalonia using Visual Studio and .NET
+      core.
+    </p>
+    <p>More IDEs and editors coming soon.</p>
+  </div>
+  <a class="button dock-bottom" href="/docs/quickstart">Get started</a>
+  <img src="/images/home/getting-started.svg">
+</section>
+
+<section id="support" class="with-img-right-responsive purple-gradient">
+  <h1>Getting support</h1>
+  <p>
+    Need help building an Avalonia application? Whether you're an enthusiast or a company making a commercial product, you have
+    somewhere to turn.
+  </p>
+  <p>
+    There are a number of support options for Avalonia, including paid support and custom
+    development via AvaloniaUI OÜ and community support via GitHub issues and our Gitter
+    chatroom.
+  </p>
+  <a class="button dock-bottom" href="/support">Get support</a>
+  <img src="/images/home/getting-support.svg">
+</section>
+
+<section id="featured-products">
+  <div class="carousel">
+    <div>
+      <div class="featured-product">
+        <div>
+          <h1>Featured Product</h1>
+          <h2>GritGene</h2>
+          <p>
+            <a href="https://www.gritworld.com/gritgene">GritGene</a> is a new digital engine that is currently being built by
+            <a href="https://www.gritworld.com/gritgene">GritWorld</a>. The UI, written using Avalonia, houses a real-time digital
+            graphics engine and that can scale from low-end hardware to high-end GPU clusters on the cloud.
+          </p>
+        </div>
+        <a href="~/images/featured-products/gritgene.png" class="lightbox">
+          <img src="~/images/featured-products/gritgene.svg">
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="featured-product">
+        <div>
+          <h1>Featured Product</h1>
+          <h2>Wasabi Wallet</h2>
+          <p>
+            <a href="https://wasabiwallet.io/">Wasabi Wallet</a> is an open-source, non-custodial, privacy-focused Bitcoin wallet
+            for Desktop computers, that implements trustless coin shuffling with mathematically provable anonymity. It is written
+            in .NET Core and uses Avalonia as its UI framework.
+          </p>
+        </div>
+        <a href="~/images/featured-products/wasabi.png" class="lightbox">
+          <img src="~/images/featured-products/wasabi.svg">
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="featured-product">
+        <div>
+          <h1>Featured Product</h1>
+          <h2>Core2D</h2>
+          <p>
+            <a href="https://github.com/wieslawsoltes/Core2D">Core2D</a>  is a multi-platform application for making data driven
+            2D diagrams. The application has built-in wyswig vector graphics editor where you can bind data to shapes, share data
+            across multiple documents, edit documents using layers. It supports exporting documents to many popular file formats
+            like pdf, bitmaps and dxf. You can automate drawing and processing by using C# scripting.
+          </p>
+        </div>
+        <a href="~/images/featured-products/core2d.png" class="lightbox">
+          <img src="~/images/featured-products/core2d.svg">
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="featured-product">
+        <div>
+          <h1>Featured Product</h1>
+          <h2>Avalon Studio</h2>
+          <p>
+            <a href="https://github.com/VitalElement/AvalonStudio">Avalon Studio</a> is an extensible, cross platform IDE written
+            in C# for Embedded C/C++, .NET Core, Avalonia and Typescript.
+          </p>
+        </div>
+        <a href="~/images/featured-products/avalon-studio.png" class="lightbox">
+          <img src="~/images/featured-products/avalon-studio.svg">
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="featured-product">
+        <div>
+          <h1>Featured Product</h1>
+          <h2>Radish</h2>
+          <p>
+            <a href="https://github.com/rbmkio/radish">Radish</a> is an open-source, cross-platform desktop client for Redis.
+          </p>
+        </div>
+        <a href="~/images/featured-products/radish.png" class="lightbox">
+          <img src="~/images/featured-products/radish.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="net-foundation" class="with-img-right-responsive purple-gradient">
+  <h1>.NET Foundation</h1>
+  <p>
+    Avalonia is a <a href="https://dotnetfoundation.org">.NET Foundation project</a>. Other projects that are associated
+    with the foundation include the .NET Compiler Platform ("Roslyn") as well as the ASP.NET family of projects, .NET Core &
+    Xamarin Forms.
+  </p>
+  <a class="button dock-bottom" href="https://dotnetfoundation.org/">Find out more</a>
+  <img src="~/images/dotnetfoundation.svg">
+</section>

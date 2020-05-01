@@ -1,0 +1,107 @@
+/* Layout for docs and blogs */
+.toc {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--gray4);
+  position: sticky;
+  top: 0;
+}
+
+.toc-content {
+  font-weight: 400;
+  overflow-y: auto;
+}
+
+  .toc-content .scroll-container {
+    height: 100%;
+  }
+
+ul.recent-blog-posts {
+  list-style: none;
+  padding-left:0;
+}
+
+ul.recent-blog-posts li a {
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+}
+
+  ul.recent-blog-posts li.selected > a {
+    background-color: var(--green);
+    font-weight: bold;
+  }
+
+.blog-post-list {
+  padding: var(--padding-large);
+}
+
+.blog-post dl {
+  opacity: 0.5;
+}
+
+.blog-post dd {
+  margin-left: 0;
+  margin-right: 1em;
+}
+
+div.meta {
+  font-size: smaller;
+  font-style: italic;
+}
+
+/* On large screens display table of contents on the left */
+@media (min-width: 1024px) {
+  .page.docs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .toc {
+    height: 100vh;
+    padding: var(--padding-large);
+  }
+
+  .blog-post dl {
+    display: flex;
+    opacity: 0.5;
+    margin: var(--padding-small) 0;
+  }
+
+  footer {
+    grid-column: 2;
+  }
+}
+
+/* On small screens display table of contents at top, collapsing */
+@media (max-width: 1023px) {
+  .toc {
+    padding: calc(var(--nav-height) + var(--padding-small)) var(--padding-large) var(--padding-small);
+  }
+
+  .toc h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+    .toc h1::after {
+      color: var(--bright-purple);
+      font-family: "Font Awesome 5 Free";
+      font-size: 2rem;
+      font-weight: 900;
+      vertical-align: middle;
+      content: "\f0d7";
+    }
+
+  .toc-content {
+    display: none;
+  }
+
+  .toc.expanded {
+    height: 100vh;
+  }
+
+    .toc.expanded .toc-content {
+      display: block;
+    }
+}

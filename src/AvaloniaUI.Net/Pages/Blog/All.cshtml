@@ -1,0 +1,44 @@
+@page
+@model AvaloniaUI.Net.Pages.Blog.AllModel
+@{
+  ViewData["Title"] = "All";
+  Layout = "~/Pages/Shared/_DocsLayout.cshtml";
+}
+
+@section Title {
+  <span class="white">avalonia</span> blog
+}
+
+@section TableOfContents {
+}
+
+@if (Model.Index?.Any() == true)
+{
+  <div class="blog-post-list">
+    @foreach (var post in Model.Index)
+    {
+      <section class="blog-post summary">
+        <a href="@Url.Content(@post.Url)"><h2 class="post-title">@post.Title</h2></a>
+        <dl>
+          <dt class="icon">Published</dt>
+          <dd class="icon date">@post.Published.ToString("yyyy-MM-dd")</dd>
+
+          @if (post.Author is object)
+          {
+            <dt class="icon">Author</dt>
+            <dd class="icon person">@post.Author</dd>
+          }
+
+          @if (post.Categories is object)
+          {
+            <dt class="icon">Category</dt>
+            foreach (var category in post.Categories)
+            {
+              <dd class="icon category">@category</dd>
+            }
+          }
+        </dl>
+      </section>
+    }
+  </div>
+}

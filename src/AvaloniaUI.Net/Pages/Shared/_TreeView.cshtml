@@ -1,0 +1,43 @@
+@using AvaloniaUI.Net.Models
+@model IEnumerable<ITreeViewNode>
+
+@functions {
+  void RenderNodes(IEnumerable<ITreeViewNode> index)
+  {
+    foreach (var item in index)
+    {
+      var hasChildren = item.Children?.Count > 0;
+      var classes = item.IsExpanded ? "expanded" : string.Empty;
+
+      if (item.IsSelected)
+      {
+        classes += " selected";
+      }
+
+      <li class="@classes">
+        @if (hasChildren)
+        {
+          <a href="#" class="expander"></a>
+        }
+
+        <a href="@item.Url" class="header">@item.Header</a>
+
+        @if (hasChildren)
+        {
+          <ul>
+            @{RenderNodes(item.Children!);}
+          </ul>
+        }
+      </li>
+    }
+  }
+}
+
+@{
+}
+
+<div class="tree-view">
+  <ul>
+    @{RenderNodes(Model);}
+  </ul>
+</div>

@@ -1,0 +1,36 @@
+footer {
+  padding: var(--padding-large);
+}
+
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+
+  footer li {
+    height: 43px;
+    padding: 8px 0 0 70px;
+  }
+
+    footer li.email {
+      background-image: url(/images/email.svg);
+      background-repeat: no-repeat;
+    }
+
+      footer li.email a {
+        text-decoration: none;
+      }
+
+    footer li.address {
+      margin: var(--padding-small) 0 0 0;
+      background-image: url(/images/location.svg);
+      background-repeat: no-repeat;
+    }
+
+    footer li.dotnetfoundation {
+      margin: var(--padding-small) 0 0 0;
+      background-image: url(/images/dotnetfoundation.svg);
+      background-repeat: no-repeat;
+      background-size: 42px;
+    }
