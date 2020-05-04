@@ -8,8 +8,8 @@ Though it can be used for any kind of control, it is often used to scale 2D imag
 The `Viewbox` gives its child infinite space in the measure phase. It will constrain either or both sides when aranging it.
 This depends on the Value of the `Stretch` property.
 
-Here is an example of a button scaled up to fit the given space. Despite the button would have
-been rendered about 22 dip high, it will effectively be displayed about 300 dip high:
+Here is an example of a button scaled up to fit the given space. Without the `Viewbox` the button would have
+been rendered at around 22 dip height. With the `Viewbox` it will be displayed with a height of 300 dip:
 
 ```xml
 <!-- button will occupy 22 dip under usual font sizes and dpi setting -->
