@@ -28,15 +28,15 @@ been rendered about 22 dip high, it will effectively be displayed about 300 dip 
 |`Stretch`|One of the following values, determining the mode of scaling.|
 
 ## Values for `Stretch`
-|Value|Description|
-|--------|-----------|
-|None    |The content preserves its original size.|
-|Fill    |The content is resized to fill the destination dimensions. The aspect ratio is not preserved.|
-|Uniform |The content is resized to fit in the destination dimensions while preserving its native aspect ratio.|
+|Value        |Description|
+|-------------|-----------|
+|None         |The content preserves its original size.|
+|Fill         |The content is resized to fill the destination dimensions. The aspect ratio is not preserved.|
+|Uniform      |The content is resized to fit in the destination dimensions while preserving its native aspect ratio.|
 |UniformToFill|The content is resized to completely fill the destination rectangle while preserving
                its native aspect ratio. A portion of the content may not be visible if the aspect
-			   ratio of the content does not match the aspect ratio of the allocated space.|
-		
+               ratio of the content does not match the aspect ratio of the allocated space.|
+
 
 # Pseudoclasses
 
