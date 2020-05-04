@@ -1,6 +1,6 @@
 Title: Viewbox
 ---
-The `Viewbox` is a decorator control and is used to scale single child.
+The `Viewbox` is a decorator control which scales its child.
 It can be used to **scale its child to fit** to the available space.
 
 Though it can be used for any kind of control, it is often used to scale 2D images to a given space.
