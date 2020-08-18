@@ -27,9 +27,9 @@ never be called as the Binding system will recognize the convention and set the 
 In this example file we create two attached properties that interact with each other: A *Command* property and a *CommandParameter* that is used by when invoking the command.
 
 ```cs
-	/// <summary>
+    /// <summary>
     /// Container class for attached properties. Must inherit from <see cref="AvaloniaObject"/>.
-	/// </summary>
+    /// </summary>
     public class DoubleTappedBehav : AvaloniaObject
     {
         /// <summary>
@@ -137,7 +137,7 @@ by qualifying it with a dot. Then bindings can be used.
              >
       <ListBox.ItemTemplate>
         <DataTemplate>
-          <TextBlock Text="{Binding }"  />          
+          <TextBlock Text="{Binding }" />          
         </DataTemplate>
       </ListBox.ItemTemplate>
     </ListBox>
@@ -154,17 +154,17 @@ When used with this view model, the `EditCommandExecuted` will run once a double
         public ObservableCollection<Profile> Accounts { get; } = new ObservableCollection<Profile>();
 
         public ReactiveCommand<object, Unit> EditCommand { get; set; }
-		
+
         public TestViewModel()
         {
             EditCommand = ReactiveCommand.CreateFromTask<object, Unit>(EditProfileExecuted);
-		}
+        }
 
         private async Task<Unit> EditCommandExecuted(object p)
         {
-			// p contains "test77"
+            // p contains "test77"
 
             return Unit.Default;
         }
-	}
+    }
 ```
