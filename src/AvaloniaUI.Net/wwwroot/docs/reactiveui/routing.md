@@ -213,4 +213,4 @@ Now, you can run the app and see routing in action!
 dotnet run --framework netcoreapp2.1
 ```
 
-<img src="/images/routing-kde.gif">
+<img src="/images/docs/routing.gif">
