@@ -6,7 +6,7 @@ When you need more or let's say foreign properties on avalonia elements, then at
 the right thing to use. They can also be used to create so called behaviors to generally modify the hosted 
 gui components. This can be utilized to bind a command to an event for instance.
 
-Here we present an example of how to use a command in an MVVM compatible way and bin it to an event.
+Here we present an example of how to use a command in an MVVM compatible way and bind it to an event.
 
 It may not be the ideal solution as there are projects such as [Avalonia Behaviors](https://github.com/wieslawsoltes/AvaloniaBehaviors)
 where this is properly done. But it illustrates the following two learnings:
