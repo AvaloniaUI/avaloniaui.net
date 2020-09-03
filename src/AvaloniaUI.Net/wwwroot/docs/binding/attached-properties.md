@@ -27,95 +27,95 @@ never be called as the Binding system will recognize the convention and set the 
 In this example file we create two attached properties that interact with each other: A *Command* property and a *CommandParameter* that is used by when invoking the command.
 
 ```cs
+/// <summary>
+/// Container class for attached properties. Must inherit from <see cref="AvaloniaObject"/>.
+/// </summary>
+public class DoubleTappedBehav : AvaloniaObject
+{
     /// <summary>
-    /// Container class for attached properties. Must inherit from <see cref="AvaloniaObject"/>.
+    /// Identifies the <seealso cref="CommandProperty"/> avalonia attached property.
     /// </summary>
-    public class DoubleTappedBehav : AvaloniaObject
+    /// <value>Provide an <see cref="ICommand"/> derived object or binding.</value>
+    public static readonly AttachedProperty<ICommand> CommandProperty = AvaloniaProperty.RegisterAttached<DoubleTappedBehav, Interactive, ICommand>(
+        "Command", default(ICommand), false, BindingMode.OneTime, ValidateCommand);
+
+    /// <summary>
+    /// Identifies the <seealso cref="CommandParameterProperty"/> avalonia attached property.
+    /// Use this as the parameter for the <see cref="CommandProperty"/>.
+    /// </summary>
+    /// <value>Any value of type <see cref="object"/>.</value>
+    public static readonly AttachedProperty<object> CommandParameterProperty = AvaloniaProperty.RegisterAttached<DoubleTappedBehav, Interactive, object>(
+        "CommandParameter", default(object), false, BindingMode.OneWay, null);
+
+
+    /// <summary>
+    /// The coerce value function. Returns the final (probably corrected result).
+    /// can be used to perform actions during assign.
+    /// </summary>
+    private static ICommand ValidateCommand(Interactive element, ICommand commandValue)
     {
-        /// <summary>
-        /// Identifies the <seealso cref="CommandProperty"/> avalonia attached property.
-        /// </summary>
-        /// <value>Provide an <see cref="ICommand"/> derived object or binding.</value>
-        public static readonly AttachedProperty<ICommand> CommandProperty = AvaloniaProperty.RegisterAttached<DoubleTappedBehav, Interactive, ICommand>(
-            "Command", default(ICommand), false, BindingMode.OneTime, ValidateCommand);
-
-        /// <summary>
-        /// Identifies the <seealso cref="CommandParameterProperty"/> avalonia attached property.
-        /// Use this as the parameter for the <see cref="CommandProperty"/>.
-        /// </summary>
-        /// <value>Any value of type <see cref="object"/>.</value>
-        public static readonly AttachedProperty<object> CommandParameterProperty = AvaloniaProperty.RegisterAttached<DoubleTappedBehav, Interactive, object>(
-            "CommandParameter", default(object), false, BindingMode.OneWay, null);
-
-
-        /// <summary>
-        /// The coerce value function. Returns the final (probably corrected result).
-        /// can be used to perform actions during assign.
-        /// </summary>
-        private static ICommand ValidateCommand(Interactive element, ICommand commandValue)
+        Interactive interactElem = element;
+        if (interactElem != null)
         {
-            Interactive interactElem = element;
-            if (interactElem != null)
+            if (commandValue != null)
             {
-                if (commandValue != null)
-                {
-                    // Add non-null value
-                    interactElem.AddHandler(InputElement.DoubleTappedEvent, Handler);
-                }
-                else
-                {
-                    // remove prev value
-                    interactElem.RemoveHandler(InputElement.DoubleTappedEvent, Handler);
-                }
+                // Add non-null value
+                interactElem.AddHandler(InputElement.DoubleTappedEvent, Handler);
             }
-
-            return commandValue;
-
-            // local handler fcn
-            void Handler(object s, RoutedEventArgs e)
+            else
             {
-                // This is how we get the parameter off of the gui element.
-                object commandParameter = interactElem.GetValue(CommandParameterProperty);
-                if (commandValue?.CanExecute(commandParameter) == true)
-                {
-                    commandValue.Execute(commandParameter);
-                }
+                // remove prev value
+                interactElem.RemoveHandler(InputElement.DoubleTappedEvent, Handler);
             }
         }
 
+        return commandValue;
 
-        /// <summary>
-        /// Accessor for Attached property <see cref="CommandProperty"/>.
-        /// </summary>
-        public static void SetCommand(AvaloniaObject element, ICommand commandValue)
+        // local handler fcn
+        void Handler(object s, RoutedEventArgs e)
         {
-            element.SetValue(CommandProperty, commandValue);
-        }
-
-        /// <summary>
-        /// Accessor for Attached property <see cref="CommandProperty"/>.
-        /// </summary>
-        public static ICommand GetCommand(AvaloniaObject element)
-        {
-            return element.GetValue(CommandProperty);
-        }
-
-        /// <summary>
-        /// Accessor for Attached property <see cref="CommandParameterProperty"/>.
-        /// </summary>
-        public static void SetCommandParameter(AvaloniaObject element, object parameter)
-        {
-            element.SetValue(CommandParameterProperty, parameter);
-        }
-
-        /// <summary>
-        /// Accessor for Attached property <see cref="CommandParameterProperty"/>.
-        /// </summary>
-        public static object GetCommandParameter(AvaloniaObject element)
-        {
-            return element.GetValue(CommandParameterProperty);
+            // This is how we get the parameter off of the gui element.
+            object commandParameter = interactElem.GetValue(CommandParameterProperty);
+            if (commandValue?.CanExecute(commandParameter) == true)
+            {
+                commandValue.Execute(commandParameter);
+            }
         }
     }
+
+
+    /// <summary>
+    /// Accessor for Attached property <see cref="CommandProperty"/>.
+    /// </summary>
+    public static void SetCommand(AvaloniaObject element, ICommand commandValue)
+    {
+        element.SetValue(CommandProperty, commandValue);
+    }
+
+    /// <summary>
+    /// Accessor for Attached property <see cref="CommandProperty"/>.
+    /// </summary>
+    public static ICommand GetCommand(AvaloniaObject element)
+    {
+        return element.GetValue(CommandProperty);
+    }
+
+    /// <summary>
+    /// Accessor for Attached property <see cref="CommandParameterProperty"/>.
+    /// </summary>
+    public static void SetCommandParameter(AvaloniaObject element, object parameter)
+    {
+        element.SetValue(CommandParameterProperty, parameter);
+    }
+
+    /// <summary>
+    /// Accessor for Attached property <see cref="CommandParameterProperty"/>.
+    /// </summary>
+    public static object GetCommandParameter(AvaloniaObject element)
+    {
+        return element.GetValue(CommandParameterProperty);
+    }
+}
 
 ```
 
@@ -149,22 +149,22 @@ When used with this view model, the `EditCommandExecuted` will run once a double
 
 
 ```cs
-    public class TestViewModel : ReactiveObject
+public class TestViewModel : ReactiveObject
+{
+    public ObservableCollection<Profile> Accounts { get; } = new ObservableCollection<Profile>();
+
+    public ReactiveCommand<object, Unit> EditCommand { get; set; }
+
+    public TestViewModel()
     {
-        public ObservableCollection<Profile> Accounts { get; } = new ObservableCollection<Profile>();
-
-        public ReactiveCommand<object, Unit> EditCommand { get; set; }
-
-        public TestViewModel()
-        {
-            EditCommand = ReactiveCommand.CreateFromTask<object, Unit>(EditProfileExecuted);
-        }
-
-        private async Task<Unit> EditCommandExecuted(object p)
-        {
-            // p contains "test77"
-
-            return Unit.Default;
-        }
+        EditCommand = ReactiveCommand.CreateFromTask<object, Unit>(EditProfileExecuted);
     }
+
+    private async Task<Unit> EditCommandExecuted(object p)
+    {
+        // p contains "test77"
+
+        return Unit.Default;
+    }
+}
 ```
