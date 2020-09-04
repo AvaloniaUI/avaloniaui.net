@@ -23,6 +23,7 @@ SyslogIdentifier=dotnet-ava
 User=root
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Environment=ASPNETCORE_URLS="http://*:80"
 
 [Install]
 WantedBy=multi-user.target
