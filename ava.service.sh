@@ -7,8 +7,29 @@ sudo apt-get update; \
   sudo apt-get update && \
   sudo apt-get install -y dotnet-runtime-3.1
 
-# Register ava.service as a new systemd service.
+# Create /home/prepare.sh
 sudo -i
+cat > /home/prepare.sh <<EOF
+mkdir -p /home/avaloniaui.net
+mkdir -p /tmp/avaloniaui.net
+chmod 777 /home/avaloniaui.net
+chmod 777 /tmp/avaloniaui.net
+EOF
+
+# Create /home/reload.sh
+cat > /home/reload.sh <<EOF
+systemctl stop ava.service > /dev/null 2>&1
+rm -r /home/avaloniaui.net/* > /dev/null 2>&1 || true
+cp -r /tmp/avaloniaui.net/* /home/avaloniaui.net/
+rm -r /tmp/avaloniaui.net/* > /dev/null 2>&1 || true
+chmod 777 /etc/systemd/system/ava.service
+chmod 777 /home/avaloniaui.net/AvaloniaUI.Net
+systemctl daemon-reload
+systemctl enable ava.service 2>&1
+systemctl restart ava.service
+EOF
+
+# Register ava.service as a new systemd service.
 cat > /etc/systemd/system/ava.service <<EOF
 [Unit]
 Description=AvaloniaUI .NET Core App
