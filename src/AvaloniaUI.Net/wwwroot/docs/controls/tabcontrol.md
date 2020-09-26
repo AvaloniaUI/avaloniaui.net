@@ -7,7 +7,7 @@ Here is an animation of what you can achieve :
 
 ![](images/TabControl.gif)
 
-To create this, we'll describe the entire control (TabControl) and each indivual tab+page (TabItem). Here is an example :
+To create this, we'll describe the entire control (TabControl) and each individual tab+page (TabItem). Here is an example :
 
 ```xml
 <TabControl>

@@ -1,4 +1,4 @@
-----
+---
 Title: Creating and binding Attached Properties
 Order: 90
 ---
