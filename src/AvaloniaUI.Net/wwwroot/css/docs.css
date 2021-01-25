@@ -50,6 +50,13 @@ div.meta {
   font-style: italic;
 }
 
+.docs-version-selector {
+  background: transparent;
+  border-color: transparent;
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+
 /* On large screens display table of contents on the left */
 @media (min-width: 1024px) {
   .page.docs {

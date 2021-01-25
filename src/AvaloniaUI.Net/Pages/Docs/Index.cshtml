@@ -11,6 +11,11 @@
 
 @section Title {
   <span class="white">avalonia</span> docs
+
+  @if (Model.Versions?.Count > 1)
+  {
+   <select class="docs-version-selector" asp-items="Model.Versions"></select>
+  }
 }
 
 @section TableOfContents {

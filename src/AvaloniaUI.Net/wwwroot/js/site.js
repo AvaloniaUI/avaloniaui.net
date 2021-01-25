@@ -58,4 +58,11 @@ $(function () {
 
     // Lightbox
     $('.lightbox').magnificPopup({ type: 'image' });
+
+    // Docs version selector.
+    $('.docs-version-selector').change(function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('version', this.value);
+        window.location.search = urlParams.toString();
+    })
 })

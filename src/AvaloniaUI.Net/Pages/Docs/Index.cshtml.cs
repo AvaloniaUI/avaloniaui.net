@@ -8,6 +8,7 @@ using AvaloniaUI.Net.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using static AvaloniaUI.Net.Services.PathUtilities;
 
 namespace AvaloniaUI.Net.Pages.Docs
@@ -28,11 +29,15 @@ namespace AvaloniaUI.Net.Pages.Docs
         public DocsArticle? Article { get; private set; }
         public List<DocsIndexItem>? Index { get; private set; }
         public List<DocsIndexItem>? SectionIndex { get; private set; }
+        public List<SelectListItem>? Versions { get; private set; }
 
         public async Task<IActionResult> OnGet(string url)
         {
-            var docsPath = Path.Combine(_env.WebRootPath, DocsRelativePath);
-            var articlePath = NormalizeMarkdownPath(Path.Combine(docsPath, url ?? string.Empty));
+            var slash = url.IndexOf('/');
+            var version = slash >= 0 ? url.Substring(0, slash) : url;
+            var article = slash >= 0 ? url.Substring(slash + 1) : string.Empty;
+            var docsPath = Path.Combine(_env.WebRootPath, DocsRelativePath, version);
+            var articlePath = NormalizeMarkdownPath(Path.Combine(docsPath, article));
 
             Article = await LoadArticle(articlePath);
 
@@ -41,6 +46,7 @@ namespace AvaloniaUI.Net.Pages.Docs
                 return NotFound();
             }
 
+            Versions = LoadVersions(version);
             Index = LoadIndex(docsPath, articlePath);
             Index.Insert(0, new DocsIndexItem
             {
@@ -72,6 +78,20 @@ namespace AvaloniaUI.Net.Pages.Docs
             }
 
             return article;
+        }
+
+        private List<SelectListItem> LoadVersions(string currentVersion)
+        {
+            var docsPath = Path.Combine(_env.WebRootPath, DocsRelativePath);
+            var result = new List<SelectListItem>();
+
+            foreach (var dirPath in Directory.EnumerateDirectories(docsPath))
+            {
+                var dirName = Path.GetFileName(dirPath);
+                result.Add(new SelectListItem(dirName, dirName, dirName == currentVersion));
+            }
+
+            return result;
         }
 
         private List<DocsIndexItem> LoadIndex(string path, string selectedPath)

@@ -46,6 +46,15 @@ namespace AvaloniaUI.Net
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
+            var redirect = new RewriteOptions()
+                // Redirect plain `docs` URLS to a URL with the current stable version, e.g.
+                // `docs` => `docs/0.10`
+                // `docs/quickstart => `docs/0.10/quickstart`
+                .AddRedirect(@"^docs(?!\/\d*\.\d*)(.*)", "docs/0.10$1")
+                // Redirect `api` links to reference.avaloniaui.net
+                .AddRedirect("^api/(.*)", "http://reference.avaloniaui.net/api/$1");
+            app.UseRewriter(redirect);
+
             app.UseStaticFiles();
             app.UseRouting();
             app.UseResponseCaching();
@@ -56,9 +65,7 @@ namespace AvaloniaUI.Net
                 endpoints.MapRazorPages();
             });
 
-            var redirect = new RewriteOptions()
-                .AddRedirect("api/(.*)", "http://reference.avaloniaui.net/api/$1");
-            app.UseRewriter(redirect);
+           
         }
     }
 }
