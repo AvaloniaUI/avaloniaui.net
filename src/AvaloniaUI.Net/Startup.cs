@@ -57,7 +57,7 @@ namespace AvaloniaUI.Net
             });
 
             var redirect = new RewriteOptions()
-                .AddRedirect("api/(.*)", "//reference.avaloniaui.net/api/$1");
+                .AddRedirect("api/(.*)", "http://reference.avaloniaui.net/api/$1");
             app.UseRewriter(redirect);
         }
     }

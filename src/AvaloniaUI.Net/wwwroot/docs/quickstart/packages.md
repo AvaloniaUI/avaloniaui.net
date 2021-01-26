@@ -36,7 +36,7 @@ And then in the NuGet package manager, select the `AvaloniaCI` package source.
 
 ## PR Feed
 
-Pull request build results are published to a [separate feed](https://www.myget.org/F/valonia-prs/api/v3/index.json).
+Pull request build results are published to a separate feed: `https://www.myget.org/F/avalonia-prs/api/v3/index.json`
 
 To get the version for a particular pull request you need to check the build number from the PR build on Azure Pipelines. Then you can use this build to determine the PR package version.
 

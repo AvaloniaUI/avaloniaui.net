@@ -1,3 +1,4 @@
+---
 Title: NumericUpDown
 ---
 The `NumericUpDown` is an editable numeric input field.

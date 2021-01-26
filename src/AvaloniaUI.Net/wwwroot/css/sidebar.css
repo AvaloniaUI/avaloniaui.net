@@ -9,41 +9,25 @@
   position: relative;
 }
 
-  .sidebar h1 {
-    font-size: 3.3rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-    line-height: 1;
-    margin: 0;
-  }
-
-.content section {
-  padding: var(--padding-large);
+.sidebar h1 {
+  font-size: 3.3rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  line-height: 1;
+  margin: 0;
 }
 
-  .content section h1:not(.with-img) {
-    margin-top: 0;
-  }
-
-.content .threee-columns section a.button {
-  align-self: flex-start;
+.sidebar ul.button-bar {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin-top: var(--padding-small);
-  font-size: 1.32rem;
+  padding: 0;
 }
 
-.note {
-  background-color: var(--note-bg);
-  border-left-color: var(--note-border);
-  border-left-width: 9px;
-  border-left-style: solid;
-  margin: 40px 0 30px 0;
-  padding: 1px 45px 20px 26px;
+.sidebar ul.button-bar li {
+  display: inline-block;
+  margin: var(--padding-small) var(--padding-small) 0 0;
 }
-
-  .note > p:first-child::before {
-    content: "Note";
-    display: block;
-    font-weight: 700;
-  }
 
 /* Hide logo if < 1024px */
 .sidebar .avalonia-logo {
@@ -63,16 +47,16 @@
     margin-top: 0;
   }
 
-    .sidebar .avalonia-logo {
-      display: inline-block;
-      margin: -14px 0 var(--padding-small) 2px;
-    }
+  .sidebar .avalonia-logo {
+    display: inline-block;
+    margin: -14px 0 var(--padding-small) 2px;
+  }
 
-    .sidebar h1 {
-      font-size: 3.3rem;
-      font-family: 'Montserrat Alternates', sans-serif;
-      line-height: 1;
-    }
+  .sidebar h1 {
+    font-size: 3.3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1;
+  }
 
   .hero-content {
     padding-top: var(--nav-height);

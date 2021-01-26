@@ -20,7 +20,7 @@ point and font weight to bold:
 ```
 
 Styles can be defined on any control or on the `Application` object by adding them to the 
-[`Control.Styles`](/api/Avalonia.Controls/Control/4145DF25) or 
+[`Control.Styles`](/api/Avalonia/StyledElement/0A46A84A) or 
 [`Application.Styles`](/api/Avalonia/Application/04017CAF) collections.
 
 ```xml
@@ -143,9 +143,55 @@ property/value pairs written in the format:
 <Setter Property="Padding" Value="4 2 0 4"/>
 ```
 
+You can also use long-form syntax to declare more complex object values:
+
+```xml
+<Setter Property="MyProperty">
+   <MyObject Property1="My Value"/>
+</Setter>
+```
+
+Bindings can also be applied using setters and can bind to the target control's `DataContext`:
+
+```xml
+<Setter Property="FontSize" Value="{Binding SelectedFontSize}"/>
+```
+
 Whenever a style is matched with a control, all of the setters will be applied to the control. 
-If a style selector should no longer match a control, the property value will revert to its
-previous value.
+If a style selector causes the style to no longer match a control, the property value will revert to
+the its next highest priority value.
+
+Note that the `Setter` creates a single instance of `Value` which will be applied to all controls
+that the style matches: if the object is mutable then changes will be reflected on all controls.
+Following on from this, any bindings on an _object within the setter `Value`_ will not have access
+to the target control's `DataContext` as there may be multiple target controls:
+
+```xml
+<Style Selector="local|MyControl">
+  <Setter Property="MyProperty">
+     <MyObject Property1="{Binding MyViewModelProperty}"/>
+  </Setter>
+</Style>
+```
+
+In the above example, the binding source will be `MyObject.DataContext`, not `MyControl.DataContext`
+and if `MyObject` has no data context then the binding will not be able to produce a value.
+
+## Templates in Setters
+
+As mentioned above, usually a single insance of a setter's `Value` is created and shared across
+all matching controls. Due to this, to use a control as a setter value, the control must be wrapped
+in a `<Template>`:
+
+```xml
+<Style Selector="Border.empty">
+  <Setter Property="Child">
+    <Template>
+      <TextBlock>No content available.</TextBlock>
+    </Template>
+  </Setter>
+</Style>
+```
 
 ## Style Precedence
 

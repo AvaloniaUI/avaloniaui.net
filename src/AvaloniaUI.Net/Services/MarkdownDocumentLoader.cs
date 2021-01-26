@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using AvaloniaUI.Net.Models;
 using YamlDotNet.Core;
@@ -15,8 +16,7 @@ namespace AvaloniaUI.Net.Services
             where TDocument : class, IMarkdownDocument, new()
             where TFrontMatter : class, IMarkdownFrontMatter, new()
         {
-            using var s = new FileStream(path, FileMode.Open);
-            using var r = new StreamReader(s);
+            using var r = File.OpenText(path);
             var line = await r.ReadLineAsync();
             var result = new TDocument();
 
@@ -25,7 +25,7 @@ namespace AvaloniaUI.Net.Services
                 return null;
             }
 
-            if (line.StartsWith("---"))
+            if (line.StartsWith("---", StringComparison.Ordinal))
             {
                 result.FrontMatter = ParseFrontMatter<TFrontMatter>(r);
             }
@@ -40,8 +40,7 @@ namespace AvaloniaUI.Net.Services
         public TFrontMatter? LoadFrontMatter<TFrontMatter>(string path)
             where TFrontMatter : class, IMarkdownFrontMatter, new()
         {
-            using var s = new FileStream(path, FileMode.Open);
-            using var r = new StreamReader(s);
+            using var r = File.OpenText(path);
             return ParseFrontMatter<TFrontMatter>(r);
         }
 

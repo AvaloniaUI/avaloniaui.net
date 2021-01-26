@@ -8,10 +8,10 @@ For the [WhenActivated](https://reactiveui.net/docs/handbook/when-activated/) Re
 
 **ViewModel.cs**
 
-This view model implements the `ISupportsActivation` interface. When the corresponding view gets attached to the visual tree, the code inside the WhenActivated block will get called. When the corresponding view gets dettached from the visual tree, the composite disposable will be disposed. `ReactiveObject` is the base class for [view model classes](https://reactiveui.net/docs/handbook/view-models/), and it implements `INotifyPropertyChanged`.
+This view model implements the `IActivatableViewModel` interface. When the corresponding view gets attached to the visual tree, the code inside the WhenActivated block will get called. When the corresponding view gets detached from the visual tree, the composite disposable will be disposed. `ReactiveObject` is the base class for [view model classes](https://reactiveui.net/docs/handbook/view-models/), and it implements `INotifyPropertyChanged`.
 
 ```cs
-public class ViewModel : ReactiveObject, ISupportsActivation
+public class ViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; }
 

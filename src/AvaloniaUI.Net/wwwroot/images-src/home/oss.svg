@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#8C45AB;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{mask:url(#SVGID_1_);}
+	.st5{fill:#613078;}
+</style>
+<g>
+	<path class="st0" d="M59.52,110.18c27.91,0,50.54-22.63,50.54-50.54S87.43,9.1,59.52,9.1S8.98,31.73,8.98,59.64
+		S31.61,110.18,59.52,110.18"/>
+</g>
+<g>
+	<g>
+		<path class="st1" d="M80.99,97.68H37.3c-3.55,0-6.42-2.88-6.42-6.42V56.07h12.85v28.77h30.84V50.5H37.3
+			c-3.55,0-6.42-2.88-6.42-6.42V32.07c0-17.39,14.14-31.53,31.53-31.53v12.85c-10.3,0-18.68,8.38-18.68,18.68v5.58h37.26
+			c3.55,0,6.42,2.88,6.42,6.42v47.18C87.41,94.81,84.53,97.68,80.99,97.68z"/>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="30.88" y="0.54" width="31.53" height="37.12">
+				<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+				<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="30.88" y="0.54" width="31.53" height="37.12" id="SVGID_1_">
+			<g class="st2">
+				
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1.2465" y1="118.4862" x2="2.2465" y2="118.4862" gradientTransform="matrix(0 -11.7284 -11.7284 0 1449.9235 44.7829)">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#000000"/>
+				</linearGradient>
+				<rect x="11.11" y="0.54" class="st3" width="98.32" height="117.57"/>
+			</g>
+		</mask>
+		<g class="st4">
+			<g>
+				<path class="st5" d="M43.73,37.66H30.88v-5.59c0-17.39,14.14-31.53,31.53-31.53v12.85c-10.3,0-18.68,8.38-18.68,18.68V37.66z"/>
+			</g>
+		</g>
+	</g>
+	<path class="st1" d="M66.51,64.05c0-4.07-3.3-7.37-7.37-7.37c-4.07,0-7.37,3.3-7.37,7.37c0,2.83,1.6,5.29,3.94,6.52v4.89
+		c0,1.89,1.53,3.43,3.43,3.43s3.43-1.53,3.43-3.43v-4.89C64.91,69.34,66.51,66.88,66.51,64.05z"/>
+</g>
+</svg>

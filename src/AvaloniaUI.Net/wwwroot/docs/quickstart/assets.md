@@ -15,7 +15,7 @@ file. The MVVM Application template by default includes all files in the `Assets
 
 ```xml
 <ItemGroup>
-  <AvaloniaResource Include="Assets\*"/>
+  <AvaloniaResource Include="Assets\**"/>
 </ItemGroup>
 ```
 
