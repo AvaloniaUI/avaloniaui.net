@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Слой_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 700 700"
+   style="enable-background:new 0 0 700 700;"
+   xml:space="preserve"
+   sodipodi:docname="AVALONIA_GENERIC_LOGO.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata28"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs26" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="3840"
+   inkscape:window-height="2066"
+   id="namedview24"
+   showgrid="false"
+   inkscape:pagecheckerboard="true"
+   inkscape:zoom="1.907168"
+   inkscape:cx="151.83269"
+   inkscape:cy="369.13893"
+   inkscape:window-x="3829"
+   inkscape:window-y="-11"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Слой_1"><inkscape:grid
+     type="xygrid"
+     id="grid835" /></sodipodi:namedview>
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:url(#SVGID_1_);stroke-width:60;stroke-miterlimit:10;}
+	.st2{fill:#8B44AC;}
+	.st3{fill:#5D2F75;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+</style>
+
+
+
+
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="271.5434"
+   y1="410.71"
+   x2="434.7436"
+   y2="247.5097"
+   gradientTransform="matrix(1.933752,0,0,1.933752,-329.70784,-307.29779)">
+	<stop
+   offset="0"
+   style="stop-color:#623079"
+   id="stop12" />
+	<stop
+   offset="0.6784"
+   style="stop-color:#8B44AC"
+   id="stop14" />
+</linearGradient>
+
+
+<g
+   id="g844"
+   transform="matrix(1.0309532,0,0,1.0309532,-13.551279,11.835468)"><circle
+     style="fill:#ffffff;stroke-width:1.93375206"
+     id="circle4"
+     r="338.79333"
+     cy="329.10001"
+     cx="353.10001"
+     class="st0" /><rect
+     style="fill:#ffffff;stroke-width:1.93375206"
+     id="rect6"
+     height="274.97952"
+     width="173.84431"
+     class="st0"
+     y="320.01135"
+     x="518.04901" /><rect
+     style="fill:#ffffff;stroke-width:1.93375206"
+     id="rect8"
+     height="116.992"
+     width="257.96249"
+     class="st0"
+     y="550.90131"
+     x="347.10538" /><circle
+     style="fill:#ffffff;stroke-width:1.93375206"
+     id="circle10"
+     r="82.764587"
+     cy="585.12878"
+     cx="609.12878"
+     class="st0" /><circle
+     style="fill:none;stroke:url(#SVGID_1_);stroke-width:116.0251236;stroke-miterlimit:10"
+     id="circle17"
+     r="165.14243"
+     cy="329.10001"
+     cx="353.10001"
+     class="st1" /><rect
+     style="fill:#8b44ac;stroke-width:1.93375206"
+     id="rect19"
+     height="224.70198"
+     width="116.02512"
+     class="st2"
+     y="326.19937"
+     x="460.22986" /><circle
+     style="fill:#5d2f75;stroke:#ffffff;stroke-width:19.3375206;stroke-miterlimit:10"
+     id="circle21"
+     r="50.470928"
+     cy="329.10001"
+     cx="121.43651"
+     class="st3" /></g>
+</svg>
