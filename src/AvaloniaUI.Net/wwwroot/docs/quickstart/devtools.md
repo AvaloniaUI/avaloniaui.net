@@ -28,6 +28,12 @@ public class MainWindow : Window
 To open the DevTools, press F12, or pass a different `Gesture` to the `this.AttachDevTools()`
 method.
 
+From release 0.10 to using devtools, you must add Avalonia.Diagnostics nuget package.
+
+```shell
+dotnet add package Avalonia.Diagnostics --version 0.10.0
+```
+
 ![Avalonia DevTools](images/devtools.png)
 
 :::note
