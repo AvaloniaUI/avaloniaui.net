@@ -47,7 +47,7 @@ public class BitmapAssetValueConverter : IValueConverter
         if (value == null)
             return null;
 
-        if (value is string rawUri && targetType == typeof(IBitmap))
+        if (value is string rawUri && targetType.IsAssignableFrom(typeof(Bitmap)))
         {
             Uri uri;
 

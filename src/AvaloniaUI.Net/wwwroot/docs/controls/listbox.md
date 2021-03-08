@@ -153,7 +153,7 @@ Once `Selection` is bound to a `SelectionModel`, `SelectedItems` will no longer 
 `SelectionChanged` event which details exactly which items have been selected and deselected.
 
 ```xml
-<ListBox Items="{Binding Items} Selection="{Binding Selection}">
+<ListBox Items="{Binding Items}" Selection="{Binding Selection}">
 ```
 
 ```csharp
