@@ -2,10 +2,7 @@
 Title: Changing the Target Framework
 Order: 10
 ---
-By default, our project templates target the following frameworks:
-
-- **Visual Studio Extension**: Dual targets .NET 4.6.1 and .NET Core 2.0
-- **.NET Core Templates**: .NET Core 2.0
+By default, our project templates target .NET 5, but older versions of .NET Core and .NET Framework 4.6.1 and above are still supported.
 
 You can change the frameworks that your project targets by opening the `.csproj` file and editing
 the `<TargetFramework>` or `<TargetFrameworks>` element.
@@ -17,9 +14,9 @@ frameworks with a `;`.
 Some examples:
 
 ```xml
-<TargetFramework>netcoreapp2.1</TargetFramework>
+<TargetFramework>netcoreapp3.1</TargetFramework>
 <TargetFramework>net461</TargetFramework>
-<TargetFrameworks>net461;netcoreapp2.1</TargetFrameworks>
+<TargetFrameworks>net461;netcoreapp3.1</TargetFrameworks>
 ```
 
 For more information on target frameworks, see [the .NET documentation](https://docs.microsoft.com/en-us/dotnet/standard/frameworks).

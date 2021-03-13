@@ -40,14 +40,10 @@ Selects a control by its [`Name`](/api/Avalonia.Controls/Control/580076CD) prope
 ## Class
 
 ```xml
-<Style Selector=".large">
-<Style Selector=":focus">
 <Style Selector="Button.large">
 <Style Selector="Button.large:focus">
 ```
 ```csharp
-new Style(x => x.Class("large"));
-new Style(x => x.Class(":focus"));
 new Style(x => x.OfType<Button>().Class("large"));
 new Style(x => x.OfType<Button>().Class("large").Class(":focus"));
 ```
@@ -124,11 +120,9 @@ selects `ContentPresenter` controls in the templates of `Button`s.
 ## Not
 
 ```xml
-<Style Selector=":not(.h1)">
 <Style Selector="TextBlock:not(.h1)">
 ```
 ```csharp
-new Style(x => x.Not(y => y.Class("h1")));
 new Style(x => x.OfType<TextBlock>().Not(y => y.Class("h1")));
 ```
 

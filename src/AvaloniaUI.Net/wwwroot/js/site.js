@@ -45,6 +45,17 @@ $(function () {
         autoplaySpeed: 5000
     });
 
+    // Fading carousel.
+    $('.carousel-fade').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: 'linear',
+        fade: true,
+        infinite: true,
+        speed: 2500,
+    });
+
     // Lightbox
     $('.lightbox').magnificPopup({ type: 'image' });
 })

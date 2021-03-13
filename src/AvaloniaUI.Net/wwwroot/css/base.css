@@ -26,8 +26,12 @@ h1 {
   color: var(--bright-purple);
 }
 
+b {
+  font-weight: 500;
+}
+
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 a {

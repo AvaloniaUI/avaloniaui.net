@@ -92,6 +92,8 @@ Like any other property, `CommandParameter` can also be bound.
 
 ## Binding To Methods
 
+### ICommand.Execute
+
 Sometimes you just want to call a method when a button is clicked without the ceremony of creating
 a command. You can do that too!
 
@@ -112,4 +114,67 @@ namespace Example
 <Window xmlns="https://github.com/avaloniaui">
   <Button Command="{Binding RunTheThing}" CommandParameter="Hello World">Do the thing!</Button>
 </Window>
+```
+
+### ICommand.CanExecute
+
+If you need to have execution dependent on CommandParameter or your ViewModel property, you can define a named method formed by the prefix "Can" and the name of your execution method; the method will accept an object parameter which is the CommandParameter and return a Boolean which determines if the method is executable.
+
+```csharp
+namespace Example
+{
+    public class MainWindowViewModel : ViewModelBase
+    {
+        public void RunTheThing(string parameter)
+        {
+            // Code for executing the command here.
+        }
+
+        bool CanRunTheThing(/* CommandParameter */object parameter)
+        {
+            return parameter != null;
+        }
+    }
+}
+```
+
+#### Trigger ICommand.CanExecute
+
+if you want trigger CanExecute from your ViewModel, you have to decorate it with one or more DependsOn attributes, where propertyName is the name of the property that will activate the CanExceute method when it changes value.
+
+```csharp
+namespace Example
+{
+    public class MainWindowViewModel : ViewModelBase
+    {
+        bool _isTheThingEnabled = true;
+
+        bool IsTheThingEnabled
+        {
+            get
+            {
+               return  _isTheThingEnabled;
+            }
+            set
+            {
+                if(value == _isTheThingEnabled)
+                   return;
+                _isTheThingEnabled = value;
+                PropertyChanged?
+                    .Invoke(this, new PropertyChangedEventArgs(nameof(IsTheThingEnabled)));
+            }
+        }
+
+        public void RunTheThing(string parameter)
+        {
+            // Code for executing the command here.
+        }
+
+        [DependsOn(nameof(IsTheThingEnabled))]
+        bool CanRunTheThing(/* CommandParameter */object parameter)
+        {
+            return IsTheThingEnabled && parameter != null;
+        }
+    }
+}
 ```

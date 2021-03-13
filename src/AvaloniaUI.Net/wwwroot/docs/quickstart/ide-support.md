@@ -1,9 +1,25 @@
 ---
-Title: Visual Studio Designer
+Title: IDE Support
 Order: 28
 ---
 
+## JetBrains Rider
+
+The [JetBrains Rider](https://www.jetbrains.com/rider/) IDE has built-in support for Avalonia XAML [starting in 2020.3](https://www.jetbrains.com/rider/whatsnew/2020-3/#version-2020-3-avalonia-support) including first-class support for Avalonia-specific XAML features and custom code inspections.
+
+See the [JetBrains Rider 2020.3 release announcement](https://www.jetbrains.com/rider/whatsnew/2020-3/#version-2020-3-avalonia-support) for more information,.
+
+Rider does not yet provide a visual designer, but this is in development. See [the GitHub project](https://github.com/ForNeVeR/AvaloniaRider) for more information and instructions on how to install.
+
+## Visual Studio
+
+### Avalonia Visual Studio Extension
+
 The [Avalonia for Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.AvaloniaforVisualStudio) includes a XAML designer which can be used to show a live preview of the XAML as you're writing it. With the Avalonia for Visual Studio extension installed, double click on an Avalonia XAML file to open it.
+
+### ReSharper for Visual Studio
+
+For Visual Studio and ReSharper users, [ReSharper 2020.3 introduces](https://www.jetbrains.com/resharper/whatsnew/2020-3/#version-2020-3-avalonia-support) built-in code analysis, code completion, navigation, and find usages.
 
 ![Visual Studio Designer](images/vs-designer.png)
 

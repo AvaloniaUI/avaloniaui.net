@@ -24,7 +24,7 @@ You can create `UserControl`s from templates:
 5. Enter your control name under "Name"
 6. Click the "Add" button
 
-## .NET Core CLU
+## .NET Core CLI
 
 Run this command replacing `[namespace]` with the namespace you'd like to create the 
 `UserControl` in and `[name]` with the name of the control.

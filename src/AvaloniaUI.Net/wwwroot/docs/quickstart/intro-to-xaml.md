@@ -3,7 +3,7 @@ Title: Introduction to XAML
 Order: 20
 ---
 Avalonia uses XAML to define user-interfaces. XAML is an XML-based markup language that is used by
-many UI framworks.
+many UI frameworks.
 
 :::note
 This section is intended as a basic introduction to using XAML in Avalonia. For more
@@ -15,11 +15,7 @@ many of the concepts are the same between frameworks.
 
 ## XAML or AXAML file?
 
-The standard extension for XAML files is `.xaml`, however if you're using the [Visual Studio extension](vs-designer)
-then you may notice that from version 0.9.11, XAML files are created with the `.axaml` extension.
-This is because Visual Studio has functionality related to files with the `.xaml` extension that
-is hard-coded to Microsoft XAML dialects and can't be overridden. For this reason we were forced to
-use our own file extension in Visual Studio.
+The traditional extension for XAML files is `.xaml` but due to problems with Visual Studio we have been forced to move to our own `.axaml` extension for Avalonia XAML files. From version 0.9.11 Avalonia XAML files created in Visual Studio use the `.axaml` extension and from version 0.10 all of our templates will be standardized on using the `.axaml` extension. 
 
 For more information see https://github.com/AvaloniaUI/Avalonia/issues/4102.
 
