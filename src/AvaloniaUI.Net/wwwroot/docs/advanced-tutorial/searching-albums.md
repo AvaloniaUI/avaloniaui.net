@@ -1,3 +1,8 @@
+---
+Title: Searching for Albums
+Order: 8
+---
+
 ## Searching For Albums
 
 In order for our application to work we are going to need some buisness logic. This code is not relevant to the tutorial, except for the fact that it will provide the following services:

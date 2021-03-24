@@ -1,3 +1,8 @@
+---
+Title: Return from Dialog
+Order: 7
+---
+
 ## Returning from the Dialog
 
 Now that the user can select one of our Albums, we need to be able to close the Dialog and return the result to the `ViewModel `that called the dialog.

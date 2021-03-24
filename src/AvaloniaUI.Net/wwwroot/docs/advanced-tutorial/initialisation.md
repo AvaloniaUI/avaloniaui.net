@@ -1,3 +1,8 @@
+---
+Title: Load data at Startup
+Order: 12
+---
+
 ## Loading Albums on Startup
 
 Our backend code provides a nice way to load the users collection from disk.

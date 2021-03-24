@@ -1,3 +1,8 @@
+---
+Title: Creating a Modern looking Window
+Order: 3
+---
+
 ## Use Dark Mode and Add a little Acrylic
 
 Lets try and make this look a little more modern by applying `Dark` mode and some `Acrylic` styling to the Window.

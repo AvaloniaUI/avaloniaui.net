@@ -1,3 +1,8 @@
+---
+Title: Creating the Project
+Order: 2
+---
+
 ## Creating a New Project
 
 From the Rider Welcome Screen, click on `New Solution`. This will open a dialog with Project Types on the left and some input fields on the right.

@@ -1,3 +1,8 @@
+---
+Title: Add Content to Dialog
+Order: 6
+---
+
 ## Adding Content to the Dialog
 
 Inside the dialog we would like the user to search for albums, and then select an album to buy.

@@ -1,3 +1,8 @@
+---
+Title: Summary
+Order: 13
+---
+
 ## Summary
 
 In this tutorial we have shown how Avalonia can be used to create engaging desktop applications. Although we have covered a lot of ground, this is only a small amount of what Avalonia can do. With Avalonia your imagination really is the only limit. 

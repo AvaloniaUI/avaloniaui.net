@@ -1,3 +1,8 @@
+---
+Title: Add Items to Users Collection
+Order: 10
+---
+
 ## Adding Albums to the Users Collection
 
 Ok so now the user can find albums to purchase, it would be nice if the user could see which albums are in their collection. To do this we can add a similar UI to the MainWindow.

@@ -1,3 +1,8 @@
+---
+Title: Setup Development Environment
+Order: 1
+---
+
 ## Setting up your development environment
 
 1. Download and install .NET 5 SDK [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download)

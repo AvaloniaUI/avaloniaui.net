@@ -1,3 +1,8 @@
+---
+Title: Displaying Images
+Order: 9
+---
+
 ## Displaying Album Cover Images
 
 So we have the Albums showing with the Artist name and Title, however if we can download the Album art and display it, this will really bring the app alive.

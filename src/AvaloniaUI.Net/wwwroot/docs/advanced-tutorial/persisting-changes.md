@@ -1,3 +1,8 @@
+---
+Title: Add Data Persistance
+Order: 11
+---
+
 ## Persisting Music Collection
 
 Persistance is the job of the buisness logic (`model`) code. However here we will see its very simple to wire this up to the UI.

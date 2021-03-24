@@ -1,3 +1,8 @@
+---
+Title: Add and Layout Controls
+Order: 4
+---
+
 ## Add and Layout some Controls
 
 Lets start by adding a `Button` to the `MainWindow`. The button will allow the `user` to purchase music in order to add to their collection.

@@ -1,3 +1,8 @@
+---
+Title: Advanced Tutorial
+Order: 0
+---
+
 # Avalonia Music Store Tutorial
 
  Today we will show you how easy it is to build great looking visual desktop applications using JetBrains Rider and Avalonia.
