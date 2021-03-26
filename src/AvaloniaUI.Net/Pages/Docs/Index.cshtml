@@ -5,7 +5,7 @@
 
 @model AvaloniaUI.Net.Pages.Docs.IndexModel
 @{
-  ViewData["Title"] = "Avalonia Docs";
+  ViewData["Title"] = "Avalonia Docs - " + (Model.Article?.Title ?? "[untitled]");
   Layout = "_DocsLayout";
 }
 
