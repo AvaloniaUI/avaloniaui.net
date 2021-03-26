@@ -1,6 +1,6 @@
 ---
 Title: Tutorial
-Order: 0
+Order: 5
 ---
 In this tutorial we're going to be creating a simple TODO application in Avalonia using the Model-View-ViewModel (MVVM) pattern.
 

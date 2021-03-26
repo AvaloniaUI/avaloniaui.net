@@ -221,7 +221,7 @@ The Avalonia input system uses attached events extensively. However, nearly all 
 
 Another syntax usage that resembles *typename*.*eventname* attached event syntax but is not strictly speaking an attached event usage is when you attach handlers for routed events that are raised by child elements. You attach the handlers to a common parent, to take advantage of event routing, even though the common parent might not have the relevant routed event as a member. Consider this example again:
 
-```xaml
+```xml
 <Border Height="50" Width="300">
   <StackPanel Orientation="Horizontal" Button.Click="CommonClickHandler">
     <Button Name="YesButton">Yes</Button>

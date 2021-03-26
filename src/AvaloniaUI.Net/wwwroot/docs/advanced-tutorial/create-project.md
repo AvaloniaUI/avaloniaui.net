@@ -11,11 +11,11 @@ At the bottom on the left hand side under the heading `Other` you will see `Aval
 
 Click the `Create` button.
 
-<img src="/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/CreateSolution.png" alt="CreateSolution" style="zoom:50%;" />
+<img src="/docs/advanced-tutorial/images/CreateSolution.png" alt="CreateSolution" style="zoom:50%;" />
 
 A new project will be created with the following structure.
 
-<img src="/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/project-structure.png" alt="project-structure" style="zoom: 50%;" />
+<img src="/docs/advanced-tutorial/images/project-structure.png" alt="project-structure" style="zoom: 50%;" />
 
 The folders are:
 
@@ -43,10 +43,10 @@ Some of the important files are:
 
 Press the debug button top right of the IDE to compile and run the project.
 
-![debug-button](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/debug-button.png)
+![debug-button](/docs/advanced-tutorial/images/debug-button.png)
 
 This will show a Window that looks like:
 
-![image-20210310192926578](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/image-20210310192926578.png)
+![image-20210310192926578](/docs/advanced-tutorial/images/image-20210310192926578.png)
 
 A little plain but we now have a running application, and a blank canvas to start from.

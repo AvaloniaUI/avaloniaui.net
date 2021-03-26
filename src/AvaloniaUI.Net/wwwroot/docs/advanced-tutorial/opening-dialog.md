@@ -13,11 +13,11 @@ In this section we shall make it so that clicking the Store Button opens a `moda
 
 When prompted name this MusicStoreWindow and press the `Enter` key.
 
-![add-window](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/add-window.png)
+![add-window](/docs/advanced-tutorial/images/add-window.png)
 
 This will add the following code:
 
-```xaml
+```xml
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -31,7 +31,7 @@ This will add the following code:
 
 Change this code as follows to enable the Acrylic and extended client area so the Window will look like our `MainWindow`.
 
-```xaml
+```xml
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -206,6 +206,6 @@ Also set `Width` and `Height`  properties of the `MusicStoreWindows` `<Window>` 
 
 Now run the application and click the Store button.
 
- ![dialog-opened](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/dialog-opened.png)
+ ![dialog-opened](/docs/advanced-tutorial/images/dialog-opened.png)
 
 As you can see the dialog window is opened perfectly centered inside the MainWindow.

@@ -1,11 +1,11 @@
 ---
 Title: Advanced Tutorial
-Order: 0
+Order: 7
 ---
 
 # Avalonia Music Store Tutorial
 
- Today we will show you how easy it is to build great looking visual desktop applications using JetBrains Rider and Avalonia.
+ Today we will show you how easy it is to build great looking visual desktop applications using JetBrains Rider and Avalonia. The full source for this tutorial can be found at https://github.com/AvaloniaUI/Avalonia.MusicStore.
 
 This guide has instructions for Rider on OSX, however the steps will be almost the same on other operating systems, and reasonably similar on other IDEs such as Visual Studio.
 
