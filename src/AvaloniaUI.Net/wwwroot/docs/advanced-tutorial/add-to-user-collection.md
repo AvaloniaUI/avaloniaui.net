@@ -11,7 +11,7 @@ Modify the `MainWindow.axaml` so that it places the existing `Button` inside a p
 
 We can then use an `ItemsControl` instead of a `ListBox` as we did before. An `ItemsControl` is the exact same as a `ListBox` except it doesnt allow the user to select anything.
 
-```xaml
+```xml
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:Avalonia.MusicStore.ViewModels"
@@ -106,6 +106,6 @@ Notice we check the result for `null`, this is because the `user` may have cance
 
 Lets run the program and see if it works.
 
-![image-20210310175949319](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/image-20210310175949319.png)
+![image-20210310175949319](/docs/advanced-tutorial/images/image-20210310175949319.png)
 
 For the finishing touch we simply need to add persistance to the application.

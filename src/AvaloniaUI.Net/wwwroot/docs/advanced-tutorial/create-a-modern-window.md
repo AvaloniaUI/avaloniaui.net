@@ -11,7 +11,7 @@ Lets try and make this look a little more modern by applying `Dark` mode and som
 
    Change the FluentTheme Mode from Light to Dark.
 
-   ```xaml
+```xml
    <FluentTheme Mode="Dark"/>
    ```
 
@@ -29,13 +29,13 @@ Lets try and make this look a little more modern by applying `Dark` mode and som
 
    
 
-   ![dark-mode-preview](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/dark-mode-preview.png)
+   ![dark-mode-preview](/docs/advanced-tutorial/images/dark-mode-preview.png)
 
    
 
 4. After where it says `Title="Avalonia.MusicStore"` add the following code:
 
-   ```xaml
+```xml
    <Window xmlns="https://github.com/avaloniaui"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:vm="using:Avalonia.MusicStore.ViewModels"
@@ -48,7 +48,7 @@ Lets try and make this look a little more modern by applying `Dark` mode and som
            
            TransparencyLevelHint="AcrylicBlur"
            Background="Transparent">
-   ```
+```
 
    This will make the Window Transparent and apply a Blur.
 
@@ -56,7 +56,7 @@ Lets try and make this look a little more modern by applying `Dark` mode and som
 
    To apply acrylic to the window, that we can tint and customize for a modern look, replace the `<TextBlock>` with the following code:
 
-   ```xaml
+```xml
    <Window xmlns="https://github.com/avaloniaui"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:vm="using:Avalonia.MusicStore.ViewModels"
@@ -85,13 +85,13 @@ Lets try and make this look a little more modern by applying `Dark` mode and som
            </ExperimentalAcrylicBorder>
        </Panel>
    </Window>
-   ```
+```
 
 Now click the `Debug` `Button` to run the application again.
 
 Notice we have a nice acrylic window effect. Shame about the titlebar though. Lets see how we can make that blend in a bit more.
 
-![acrylic-material](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/acrylic-material.png)
+![acrylic-material](/docs/advanced-tutorial/images/acrylic-material.png)
 
 *Note, Linux users can not yet take advantage of this due to limitations of X11. The code will run and the window will still work on Linux, but the full effect will not be realised.
 
@@ -103,7 +103,7 @@ Notice we have a nice acrylic window effect. Shame about the titlebar though. Le
 
    To enable this mode on the `Window` element  set the `ExtendClientAreaToDecorationsHint` property to `True`.
 
-   ```xaml
+```xml
    <Window xmlns="https://github.com/avaloniaui"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:vm="using:Avalonia.MusicStore.ViewModels"
@@ -117,10 +117,10 @@ Notice we have a nice acrylic window effect. Shame about the titlebar though. Le
            Background="Transparent"
            
            ExtendClientAreaToDecorationsHint="True">
-   ```
+```
 
    Press the `Debug` button again to run.
 
-![full-acrylic-window](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/full-acrylic-window.png)
+![full-acrylic-window](/docs/advanced-tutorial/images/full-acrylic-window.png)
 
 Perfect, a modern looking Window, Avalonia is able to render every pixel.

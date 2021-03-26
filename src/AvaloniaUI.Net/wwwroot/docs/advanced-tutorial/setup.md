@@ -48,19 +48,19 @@ Order: 1
 
    Once Rider loads you will see the Welcome Screen. Click the `Configure` dropdown and select `Plugins`. 
 
-<img src="/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/rider-welcome.png" alt="rider-welcome" style="zoom:50%;" />
+<img src="/docs/advanced-tutorial/images/rider-welcome.png" alt="rider-welcome" style="zoom:50%;" />
 
 A new Preferenes Screen will open up. Click the `Settings` icon as shown and select `Manage Plugin Repositories...`
 
-![configure-plugin-repos](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/configure-plugin-repos.png)
+![configure-plugin-repos](/docs/advanced-tutorial/images/configure-plugin-repos.png)
 
 Click the `+` icon and enter the url `https://plugins.jetbrains.com/plugins/dev/14839`then click `OK`
 
-<img src="/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/enter-plugin-repo.png" alt="enter-plugin-repo" style="zoom:50%;" />
+<img src="/docs/advanced-tutorial/images/enter-plugin-repo.png" alt="enter-plugin-repo" style="zoom:50%;" />
 
 Now click on the `Marketplace` tab and search for `Avalonia`. Select `AvaloniaRider` and click `Install` then once thats done, click the `Restart IDE` button that will appear.
 
-<img src="/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/plugin-install.png" alt="plugin-install" style="zoom:50%;" />
+<img src="/docs/advanced-tutorial/images/plugin-install.png" alt="plugin-install" style="zoom:50%;" />
 
 
 

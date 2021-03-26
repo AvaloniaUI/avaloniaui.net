@@ -30,7 +30,7 @@ As you can see it firstly uses the buisness logic apis to load the list of `Albu
 
 Note we then re-iterate over the `Albums` and asynchronously load each cover. Note that we do this after adding all the albums to the list, as its more important to quickly show the user all the albums available and then load the images. 
 
-![image-20210310184202271](/Users/danwalmsley/repos/avaloniaui.net/src/AvaloniaUI.Net/wwwroot/docs/advanced-tutorial/images/image-20210310184202271.png)
+![image-20210310184202271](/docs/advanced-tutorial/images/image-20210310184202271.png)
 
 
 
