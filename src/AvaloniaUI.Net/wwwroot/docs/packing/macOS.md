@@ -31,7 +31,7 @@ MyProgram.app
     ------Info.plist [stores information on your bundle identifier, version, etc.)
 ```
 
-For more information on `Info.plist`, see [Apple's documentation here]((https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html)).
+For more information on `Info.plist`, see [Apple's documentation here](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html).
 
 ## Making the application bundle
 
