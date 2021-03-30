@@ -66,11 +66,9 @@ The simplest way to control the layout of a control is with the  `HorizontalAlig
 
 We also add a `Margin` of 40 to the `Panel` so that the button is not right at the edge of the Window.
 
-You may prefer to have an icon or image instead of text inside your button. The are a few ways to do this, lets grab a store icon from [fluentui-system-icons/icons.md at master · microsoft/fluentui-system-icons (github.com)](https://github.com/microsoft/fluentui-system-icons/blob/master/icons.md)
+You may prefer to have an icon or image instead of text inside your button. The are a few ways to do this, lets grab a store icon from [Avalonia - Fluent Icons](http://avaloniaui.github.io/icons.html)
 
-Scroll through this page and find an icon you like, note the name and then look at:
-
-https://raw.githubusercontent.com/AvaloniaUI/MusicStore.Tutorial/master/FluentUiIcons_Regular.xaml
+Scroll through this page and find an icon you like, then simply copy the code provided.
 
 Find the name, in this case `store_microsoft_regular`. 
 
