@@ -9,7 +9,9 @@ Order: 7
 
 This guide has instructions for Rider on OSX, however the steps will be almost the same on other operating systems, and reasonably similar on other IDEs such as Visual Studio.
 
-This tutorial acompanies our livestreamed webinar.
+This tutorial acompanies our livestreamed webinar, which can be found at:
+
+[Building Engaging Cross Platform Applications using Rider and Avalonia - YouTube](https://www.youtube.com/watch?v=kZCIporjJ70)
 
 Our livestream assumes some knowledge of XAML, MVVM development, however this guide should fill in the gaps for begginers.
 
