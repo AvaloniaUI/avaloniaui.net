@@ -110,7 +110,7 @@ Instead of specifying `CFBundleDisplayName`, etc., on the command line, you can 
     <CFBundleDisplayName>MyBestThingEver</CFBundleDisplayName>
     <CFBundleIdentifier>com.example</CFBundleIdentifier>
     <CFBundleVersion>1.0.0</CFBundleVersion>
-    <CFBundlePackageType>AAPL</CFBundlePackageType>
+    <CFBundlePackageType>APPL</CFBundlePackageType>
     <CFBundleSignature>????</CFBundleSignature>
     <CFBundleExecutable>AppName</CFBundleExecutable>
     <CFBundleIconFile>AppName.icns</CFBundleIconFile> <!-- Will be copied from output directory -->
