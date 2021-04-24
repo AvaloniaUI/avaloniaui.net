@@ -88,6 +88,52 @@ The grey part is the `TabItem`... Yes, the `TabItem` includes the tab **AND** th
 </Window.Styles>
 ```
 
+## Binding support
+
+Dynamically generated `TabItem`s through binding are also supported. In this case bind Items property. The `TabStrip` header content is defined by ItemTemplate property, while `TabItem`'s content is defined by ContentTemplate property.
+
+The following example uses a `TabItemModel` array to represent two tabs.
+Let's first create the model.
+```csharp
+public class TabItemModel
+{
+	public string Header { get; }
+	public string Content { get; }
+	public TabItemModel(string header, string content)
+	{
+		Header = header;
+		Content = content;
+	}
+}
+```
+Create an array of two `TabItemModel` instances and bind it to the DataContext.
+```csharp
+DataContext = new TabItemModel[] { 
+	new TabItemModel("One", "Some content on first tab"),
+	new TabItemModel("Two", "Some content on second tab"),
+};
+```
+
+Finally create a `TabControl` and bind its Items property to the DataContext.
+```xml
+<TabControl Items="{Binding}">
+    <TabControl.ItemTemplate>
+      <DataTemplate>
+        <TextBlock Text="{Binding Header}" />
+      </DataTemplate>
+    </TabControl.ItemTemplate>
+    <TabControl.ContentTemplate>
+      <DataTemplate>
+        <DockPanel LastChildFill="True">
+          <TextBlock Text="This is content of selected tab" DockPanel.Dock="Top" FontWeight="Bold" />
+          <TextBlock Text="{Binding Content}" />
+        </DockPanel>
+      </DataTemplate>
+    </TabControl.ContentTemplate>
+  </TabControl>
+```
+
+
 ## Reference
 [TabControl](http://reference.avaloniaui.net/api/Avalonia.Controls/TabControl/)
 
