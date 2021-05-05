@@ -5,6 +5,7 @@
   background-color: var(--gray4);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .toc-content {
