@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+    </style>
+    <title>Avalonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicons/favicon.ico" />
+    <link rel="manifest" href="~/favicons/manifest.json">
+    <link rel="mask-icon" href="~/favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-config" content="~/favicons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="av-bg-dark text-light support">
+
+    <div class="container-fluid px-0 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 av-bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.avaloniaui.net/">
+                    <img src="assets/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Avalonia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-md-auto">
+                        <a class="nav-link px-5" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link px-5 active" href="support.html">Support</a>
+                        <a class="nav-link px-5" href="https://docs.avaloniaui.net/">Documentation</a>
+                    </div>
+
+                    <div class="float-end">
+                        <a class="btn btn-primary" href="https://github.com/AvaloniaUI/Avalonia" target="_blank"
+                            role="button">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="assets/gh-social-light.svg" />
+                                    </div>
+                                    <div class="col">Source Code</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid px-0 pb-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-9 mx-auto mt-5">
+                    <div class="p-4 text-center mt-md-3">
+                        <h1>Simple, fair pricing.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 mx-auto text-center">
+                    <h4 class="mb-5">Partner with the creators of Avalonia to ensure you have the best support, every
+                        step of the way.</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container price-plans pb-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card mb-5 mb-lg-0">
+                    <div class="card-body d-flex flex-column m-3">
+                        <h4 class="mx-auto mb-5">Community</h4>
+
+                        <div class="mx-auto">
+                            <h3 class="mx-auto">Free</h3>
+                            <p class="ms-auto">...</p>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Community Support
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Visual Studio & Rider Integration
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="btn btn-primary" href="https://github.com/AvaloniaUI/Avalonia/discussions"
+                                target="_blank" role="button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-4 mb-5 mb-xl-0">
+                    <div class="card-body d-flex flex-column m-3">
+                        <h4 class="mx-auto mb-5">Startup</h4>
+
+                        <div class="mx-auto">
+                            <h3 class="mx-auto">€ 200/mo</h3>
+                            <p class="ms-auto">per seat</p>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Email Support
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Direct Chat
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Video Consultation as needed
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Project Board
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Priority Response to GitHub Issues
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Visual Studio & Rider Integration
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="btn btn-primary"
+                                href="mailto:team@avaloniaui.net?subject=Interested in Startup Support"
+                                role="button">Get Support</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body d-flex flex-column m-3">
+                        <h4 class="mx-auto mb-5">Enterprise</h4>
+
+                        <div class="mx-auto">
+                            <h3 class="mx-auto">€ 400/mo</h3>
+                            <p class="ms-auto">per seat</p>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Email Support
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Direct Chat
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Video Consultation as needed
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Project Board
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Priority Response to GitHub Issues
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                One Buisness Day SLA
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Hotfixes
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Technical Kick-off Session
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <img src="assets/checkmark.svg" />
+                            </div>
+                            <div class="col">
+                                Visual Studio & Rider Integration
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="btn btn-primary"
+                                href="mailto:team@avaloniaui.net?subject=Interested in Enterprise Support"
+                                role="button">Get Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-container">
+            <div class="background background-support"></div>
+            <div class="background background-support curve"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+                <div class="text-center">
+                    <h2>Business grade quality <b>for all plans.</b></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 col-lg-5 px-5 mx-auto text-center">
+                <p>No matter the level of support you require, we’re here as your trusted partners. Our goal is to
+                    ensure all of our customers are successful when using Avalonia. </p>
+            </div>
+        </div>
+        <div class="row text-center pt-5">
+            <div class="col-md-4 col-12 mb-5">
+                <img src="assets/stopwatch-half.svg" class="mb-4" />
+                <h2>Speedy Replies</h2>
+                <p>With a one business day SLA, you’re guaranteed to have the support when it matters the most.</p>
+            </div>
+            <div class="col-md-4 col-12 mb-5">
+                <img src="assets/forward.svg" class="mb-4" />
+                <h2>Fast-Forward to success</h2>
+                <p>Use the technical kick-off session to get an invaluable one-to-one session from one of our experts.
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="assets/vector-editing.svg" class="mb-4" />
+                <h2>Fully customizable.</h2>
+                <p>We’ll work with you to understand your needs and can create tailored plans to better serve you.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 pb-5">
+        <div class="relative pb-5">
+            <div class="background-container bg-light">
+                <div class="background curve av-bg-dark" style="z-index: 1;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 bg-light text-dark">
+        <div class="container pb-5 faq">
+            <div class="row text-center pt-5 mb-5">
+                <h3>Frequently asked questions</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 pe-lg-5">
+                    <h4>Does my plan include support?</h4>
+                    <p>All paid plans include support. This means your engineers can chat directly with the core team,
+                        request phone calls or video conference as needed.</p>
+                </div>
+                <div class="mt-5 col-12 col-lg-6 ps-lg-5 mt-lg-0">
+                    <h4>Can I phone for help?</h4>
+                    <p>All paid plans your engineers can schedule calls or video conferences as required. To provide
+                        consultation on Avalonia.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-12 pe-5 col-lg-6 pe-lg-5">
+                    <h4>Do you offer training?</h4>
+                    <p>Yes we offer training which is charged at an hourly rate (€75/hour). Get in touch with us so we
+                        can discuss your needs.</p>
+                </div>
+                <div class="col-12 mt-5 col-12 col-lg-6 ps-lg-5 mt-lg-0">
+                    <h4>Do you offer one-off incident support? </h4>
+                    <p>Yes we can offer you technical support at an hourly rate. Get in touch with details and we will
+                        be happy to help.</p>
+                </div>
+            </div>
+
+            <div class="row pb-5">
+                <div class="col-12 pe-5 col-lg-6 pe-lg-5">
+                    <h4>Can you migrate my app for me?</h4>
+                    <p>We provide FREE consultations and quotations. Its best to contact us so we can discuss the
+                        details and size of your migration.</p>
+                </div>
+                <div class="mt-5 col-12 col-12 col-lg-6 ps-lg-5 mt-lg-0">
+                    <h4>Can you build me a proof-of-concept?</h4>
+                    <p>Of course! Get in touch and tell us more. We are happy to sign standard NDA agreements beforehand
+                        to protect your IP.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mx-auto text-center">
+                    <a class="mx-auto btn btn-primary" href="mailto:team@avaloniaui.net?subject=Enquiry"
+                        role="button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-5 mb-5">
+        <div class="row">
+            <div class="col-6 mx-0 pe-5 text-center">
+                <img src="assets/jb.svg" />
+                <blockquote class="blockquote mt-5">
+                    <p class="mb-0">“We greatly appreciate the quick and helpful support we have had from the Avalonia
+                        developers who have addressed our questions.”</p>
+                </blockquote>
+            </div>
+            <div class="col-6 mx-0 ps-5 text-center">
+                <img src="assets/gritworld.svg" />
+                <blockquote class="blockquote mt-5">
+                    <p class="mb-0">“we greatly appreciate the quick and helpful support we have had from the Avalonia
+                        developers who have addressed our questions”</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container mt-5 pt-5">
+            <div class="row pb-5">
+                <div class="col-6 col-md-4">
+                    <div class="container">
+                        <div class="row">
+                            <h4><b>Avalonia</b></h4>
+                            <p>The .NET XAML framework</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                                    <img src="assets/gh-social.svg" />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://twitter.com/avaloniaui" target="_blank">
+                                    <img src="assets/twitter-social.svg" />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/watch?v=kZCIporjJ70" target="_blank">
+                                    <img src="assets/youtube-social.svg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6>Projects</h6>
+                    <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                        <p>Avalonia</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avaloniavs" target="_blank">
+                        <p>Avalonia for VS</p>
+                    </a>
+                    <a href="https://github.com/ForNeVeR/AvaloniaRider" target="_blank">
+                        <p>Avalonia for Rider</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avalonia-dotnet-templates" target="_blank">
+                        <p>dotnet Templates</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6>Info</h6>
+                    <a href="showcase.html">
+                        <p>Showcase</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6>Support</h6>
+                    <a href="https://docs.avaloniaui.net/">
+                        <p>Documentation</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Consulting Services</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Commercial Support</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
