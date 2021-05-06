@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+    </style>
+    <title>Avalonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicons/favicon.ico" />
+    <link rel="manifest" href="~/favicons/manifest.json">
+    <link rel="mask-icon" href="~/favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-config" content="~/favicons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="av-bg-dark text-light home">
+
+    <div class="container-fluid px-0 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 av-bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.avaloniaui.net/">
+                    <img src="assets/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Avalonia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-md-auto">
+                        <a class="nav-link px-5 active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link px-5" href="support.html">Support</a>
+                        <a class="nav-link px-5" href="https://docs.avaloniaui.net/">Documentation</a>
+                    </div>
+
+                    <div class="float-end">
+                        <a class="btn btn-primary" href="https://github.com/AvaloniaUI/Avalonia" target="_blank"
+                            role="button">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="assets/gh-social-light.svg" />
+                                    </div>
+                                    <div class="col">Source Code</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-9 mx-auto mt-5">
+                <div class="p-4 text-center mt-md-3">
+                    <h1>The XAML framework that you’ll love to build with.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-md-6  mx-auto text-center">
+                <h4 class="mb-5">We created a cross platform .NET UI framework for that’s easy-to-use, trusted by
+                    industry leaders and supports all the major platforms. </h4>
+                <a class="btn btn-primary" href="https://docs.avaloniaui.net/" role="button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8 mx-auto text-center">
+
+                <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/core2d.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/synfonia.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/vhdp.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <h6>Proud to be working with</h6>
+                </div>
+            </div>
+            <div class="row justify-content-evenly mt-3 text-center">
+                <div class="col-md-3 col-sm-1">
+                    <a href="http://www.se.com/" target="_blank">
+                        <img height="20" src="assets/se.svg" />
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-1 mt-3 mt-sm-0">
+                    <a href="http://www.jetbrains.com/" target="_blank">
+                        <img height="20" src="assets/jb.svg" />
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-1 mt-3 mt-sm-0">
+                    <a href="http://www.unity.com/" target="_blank">
+                        <img height="20" src="assets/unity.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-evenly mt-3 text-center">
+                <div class="col-md-3 col-sm-2">
+                    <a href="https://synergysports.com/" target="_blank">
+                        <img height="20" src="assets/synergiesports.svg" />
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-2 mt-3 mt-sm-0">
+                    <a href="http://www.gritworld.com/" target="_blank">
+                        <img height="20" src="assets/gritworld.svg" />
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-2 mt-3 mt-sm-0">
+                    <a href="http://www.wasabiwallet.io/" target="_blank">
+                        <img height="20" src="assets/wasabi.svg" />
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-8 mt-3 mt-sm-3 mt-md-0">
+                    <a href="http://www.getmailbird.com/" target="_blank">
+                        <img height="20" src="assets/mailbird.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid px-0">
+        <div class="relative pb-5">
+            <div class="background-container bg-home">
+                <div class="background curve av-bg-dark" style="z-index: 1;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 bg-home">
+        <div class="container-fluid">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-sm-8 mx-auto">
+                        <div class="text-center">
+                            <h2>An experience you'd expect from a commerical framework</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 mx-auto text-center">
+                        <h4>We’ve an uncompromising focus on creating a cross-platform UI framework that
+                            developers love and businesses trust.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="card mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid mt-3 ms-3" src="assets/GitHub.svg" width="92" height="92" />
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">Open Source</h6>
+                            <p class="card-text">Avalonia is open source, free to use and will be. Clone the source
+                                today to
+                                dig deeper.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-5 mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid mt-3 ms-3" src="assets/VS.svg" width="92" height="92" />
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">Visual Studio Extension</h6>
+                            <p class="card-text">The free VS extension provides everything needed to start including a
+                                XAML
+                                previewer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid mt-3 ms-3" src="assets/jb-colour.svg" width="92" height="92" />
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">JetBrains Rider & R#</h6>
+                            <p class="card-text">JetBrains deep understanding of Avalonia shines through with Rider and
+                                R#
+                                support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/windows-brand.svg" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/MacOS_logo.svg" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/linux-brand.svg" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/raspberry-pi-brand.svg" />
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-3">
+                                    <img src="assets/WebAssembly_Logo.svg" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/IOS.svg" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/android.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">Cross Platform</h6>
+                            <p class="card-text card-caption">Deploy to the platforms you care about with ease.</p>
+                            <p class="card-text card-small-print">* Mobile support is in public preview while WASM
+                                support
+                                is in private preview.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-5 mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid mt-3 ms-3" src="assets/reuse.svg" width="92" height="92" />
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">Use Existing Skills</h6>
+                            <p class="card-text">Leverage existing WPF, UWP or Xamarin knowleadge to kickstart your
+                                project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid mt-3 ms-3" src="assets/Help.svg" width="92" height="92" />
+                        <div class="mt-auto ms-3 mb-3">
+                            <h6 class="card-title">Commerical Support</h6>
+                            <p class="card-text">Get the support your project needs with one of our commerical support
+                                contracts. Help you can count on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-10">
+                                <div class="text-left">
+                                    <h2 class="mb-3">Bring your favourite tools</h2>
+                                    <h4 class="mb-3"><b>Visual Studio.</b> If you love to develop in Visual Studio then
+                                        you’re in
+                                        luck! The Avalonia Extension provides XAML intellisense and a built in
+                                        previewer.
+                                    </h4>
+                                    <h4 class="mb-3"><b>JetBrains Rider & R#.</b> Offering the deepest understanding of
+                                        Avalonia,
+                                        and extensive integration with thier tools, JetBrains delivers huge productivity
+                                        gains for Avalonia developers.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-lg-block col">
+                    <img class="img-fluid float-end" src="assets/rider-ide-screenshot.png" />
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5 ">
+                <div class="col-12 col-md order-md-1">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-10">
+                                <div class="text-left">
+                                    <h2 class="mb-3">A proven path for WPF app modernization</h2>
+                                    <h4 class="mb-3"><b>Familiar.</b> Often considered a spirital successor to WPF,
+                                        Avalonia
+                                        provides a familiar developer experience, leverage years of pre-existing
+                                        knowleadge.
+                                    </h4>
+                                    <h4 class="mb-3"><b>Proven.</b> Trusted by <b>JetBrains</b> as the right framework
+                                        for
+                                        modernising
+                                        their WPF based tools. Their tools are used by 170,000 companies, including 431
+                                        on
+                                        the Fortune 500 list. </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-lg-block col order-md-0">
+                    <img class="img-fluid float-start" src="assets/dotmem.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-left">
+                                <h2 class="mb-3">Join a growing community</h2>
+                                <h4 class="mb-3">We’ve seen huge growth in the community as Avalonia use has increased.
+                                    You’ll be
+                                    welcomed with open arms into our vibrant community.</h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <h3>24</h3>
+                                <p>Code Contributors</p>
+                            </div>
+                            <div class="col">
+                                <h3>> 11k</h3>
+                                <p>GitHub Stars</p>
+                            </div>
+                            <div class="col">
+                                <h3>> 50k</h3>
+                                <p>IDE Extension Installs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <div class="container my-5 py-5">
+            <img class="img-fluid w-100"
+                src="https://opencollective.com/Avalonia/contributors.svg?width=890&button=false" />
+        </div>
+
+        <div class="container mb-5 pb-5">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="p-5 text-center">
+                        <h1 class="mb-3">Loved by developers.</h1>
+                        <h1 class="mb-3">Trusted by businesses.</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5 mx-auto text-center">
+                    <h4 class="mb-3">Don’t take our word for it, learn from those who’ve bet big on Avalonia and reaped
+                        the
+                        rewards. </h4>
+                    <a class="btn btn-primary mt-5" href="showcase.html" role="button">Avalonia Showcase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer">
+            <div class="container mt-5 pt-5">
+                <div class="row pb-5">
+                    <div class="col-6 col-md-4">
+                        <div class="container">
+                            <div class="row">
+                                <h4><b>Avalonia</b></h4>
+                                <p>The .NET XAML framework</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                                        <img src="assets/gh-social.svg" />
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://twitter.com/avaloniaui" target="_blank">
+                                        <img src="assets/twitter-social.svg" />
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.youtube.com/watch?v=kZCIporjJ70" target="_blank">
+                                        <img src="assets/youtube-social.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h6>Projects</h6>
+                        <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                            <p>Avalonia</p>
+                        </a>
+                        <a href="https://github.com/avaloniaui/avaloniavs" target="_blank">
+                            <p>Avalonia for VS</p>
+                        </a>
+                        <a href="https://github.com/ForNeVeR/AvaloniaRider" target="_blank">
+                            <p>Avalonia for Rider</p>
+                        </a>
+                        <a href="https://github.com/avaloniaui/avalonia-dotnet-templates" target="_blank">
+                            <p>dotnet Templates</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h6>Info</h6>
+                        <a href="showcase.html">
+                            <p>Showcase</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h6>Support</h6>
+                        <a href="https://docs.avaloniaui.net/">
+                            <p>Documentation</p>
+                        </a>
+                        <a href="support.html">
+                            <p>Consulting Services</p>
+                        </a>
+                        <a href="support.html">
+                            <p>Commercial Support</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
