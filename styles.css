@@ -206,3 +206,7 @@ h6 {
 .support .faq p {
   color: #384C74;
 }
+
+.linkcard {
+		text-decoration: none; /* no underline */
+}
