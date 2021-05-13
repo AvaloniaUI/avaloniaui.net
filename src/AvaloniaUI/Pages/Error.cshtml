@@ -1,0 +1,32 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Maybe we put an image here? -->
+
+
+        <div class="col-lg-9 mx-auto mt-5">
+            <div class="p-4 text-center mt-md-3">
+                <h1 class="text-danger">Uh oh.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8  mx-auto text-center">
+            <h4 class="mb-2">We ran into an issue, but don't worry, someone will look into it.</h4>
+
+            @if (Model.ShowRequestId)
+            {
+                <p>
+                    <strong>Request ID:</strong> <code>@Model.RequestId</code>
+                </p>
+            }
+        </div>
+    </div>
+</div>
+

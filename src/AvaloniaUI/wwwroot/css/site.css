@@ -1,0 +1,214 @@
+﻿@font-face {
+    font-family: "Nunito", sans-serif;
+    font-size: calc(1rem + 1vw);
+    src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: calc(1rem + 1vw);
+}
+
+#mainCarousel {
+    width: auto;
+    overflow: hidden;
+}
+
+p {
+    color: #869AB8;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+b {
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 37px;
+    font-weight: 200;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 0.75em;
+    color: #abbcd5;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: #7c69ef;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 0.6em;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.navbar {
+    font-size: 16px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.footer {
+    background: rgb(27, 42, 78);
+}
+
+    .footer h6 {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        color: #506690;
+    }
+
+    .footer p {
+        font-weight: normal;
+        font-size: 17px;
+    }
+
+    .footer a {
+        text-decoration: none;
+    }
+
+.av-bg-dark {
+    background: #161c2d;
+}
+
+.bg-header-support {
+    background: #335EEA;
+}
+
+.home .card {
+    background: #1e263d;
+    height: 350px;
+    width: 320px;
+    border-radius: 15px;
+}
+
+.card-text {
+    color: #869AB8;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.card-small-print {
+    color: #869AB8;
+    font-weight: 200;
+    font-size: 11px;
+}
+
+.btn-primary {
+    background: #8B44AC;
+    border: #8B44AC;
+}
+
+.price-plans .card {
+    background: white;
+    border-radius: 15px;
+    width: 333px;
+    height: fit-content;
+    font-size: 15px;
+    color: #161C2D;
+    font-weight: 200;
+}
+
+@media (min-width: 1200px) {
+    .price-plans .card {
+        height: auto;
+    }
+}
+
+.price-plans h4 {
+    color: #6C8AEC;
+    background: rgb(240, 243, 253);
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.relative {
+    position: relative;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+.bg-home {
+    background: rgb(28, 35, 56);
+}
+
+.background-support {
+    background: #335EEA;
+}
+
+.background {
+    height: 420px;
+}
+
+    .background.curve {
+        height: 98px;
+        z-index: -100;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+
+.support h2 {
+    font-size: 31px;
+    font-weight: 200;
+}
+
+.support b {
+    color: #8B44AC;
+}
+
+.support .footer b {
+    color: #ffffff;
+}
+
+.support .btn-primary {
+    background: #335EEA;
+    border: #335EEA;
+}
+
+.showcase .background {
+    height: 220px;
+}
+
+.support .faq h4 {
+    color: #161C2D;
+}
+
+@media (max-width: 767px) {
+    .support .faq h4 {
+        font-size: 1em;
+    }
+}
+
+.support .faq p {
+    color: #384C74;
+}
