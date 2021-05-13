@@ -1,0 +1,138 @@
+@page "/blog/{*url}"
+@model AvaloniaUI.Pages.Blog.IndexModel
+
+@using Westwind.AspNetCore.Markdown;
+
+@{
+  ViewData["Title"] = "Blog";
+}
+
+
+<div class="row">
+  <div class="col-sm-9 mx-auto mt-5">
+    <div class="p-4 text-center mt-md-3">
+      <h1>Blog</h1>
+    </div>
+  </div>
+</div>
+
+
+
+@if (Model.FeaturedPosts?.Any() == true)
+{
+  <section class="pt-7 pt-md-10">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md">
+          <h3 class="mb-0">
+            Featured Posts
+          </h3>
+        </div>
+
+
+        <div class="col-12 col-md-auto">
+          <!-- View All -->
+          <a href="#!" class="btn btn-primary">
+            View all
+          </a>
+        </div>
+      </div> <!-- / .row -->
+
+
+      <div class="row">
+        @foreach (var i in Model.FeaturedPosts)
+        {
+          <div class="col-12 col-md-4 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0">
+
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+
+                <!-- Image -->
+                <img src="@i.FeatureImage" alt="..." class="card-img-top">
+
+
+              </a>
+
+              <!-- Body -->
+              <a class="blog-card-body" href="#!">
+
+                <!-- Heading -->
+                <h3 class="blog-cards-title">
+                  @i.Title
+                </h3>
+
+              </a>
+
+              <!-- Author -->
+              <h6 class="card-text">
+                @i.Author
+              </h6>
+
+              <!-- Date -->
+              <p class="card-text">
+                @i.Published.ToString("yyyy-MM-dd")
+              </p>
+
+            </div>
+          </div>
+        }
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+}
+
+
+@if (Model.RecentPosts?.Any() == true)
+{
+  <section class="mt-5">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md">
+          <h3 class="mb-0">
+            Recent Posts
+          </h3>
+        </div>      
+      </div> <!-- / .row -->
+
+
+      <div class="row">
+        @foreach (var i in Model.RecentPosts)
+        {
+          <div class="col-12 col-md-4 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0">
+             
+              <!-- Body -->
+              <a class="blog-card-body" href="#!">
+
+                <!-- Heading -->
+                <h3 class="blog-cards-title">
+                  @i.Title
+                </h3>
+
+              </a>
+
+              <!-- Author -->
+              <h6 class="card-text">
+                @i.Author
+              </h6>
+
+              <!-- Date -->
+              <p class="card-text">
+                @i.Published.ToString("yyyy-MM-dd")
+              </p>
+
+            </div>
+          </div>
+        }
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+}
+
+
+

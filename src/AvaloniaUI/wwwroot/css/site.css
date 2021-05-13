@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: "Nunito", sans-serif;
     font-size: calc(1rem + 1vw);
     src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
@@ -103,6 +103,49 @@ h6 {
     width: 320px;
     border-radius: 15px;
 }
+
+
+.blog-card-body {
+  margin-bottom: .5rem;
+  font-weight: 200;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.blog-cards-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 10px;
+  color: white;
+}
+
+.blog-card-body, .blog-card-footer, .blog-card-meta {
+  position: relative;
+  min-height: 1px;
+  margin-bottom: 10px;
+}
+
+
+
+.blog-card-image {
+  flex-shrink: 0;
+  width: 100%;
+  border-top-left-radius: calc(.375rem - 0px);
+  border-top-right-radius: calc(.375rem - 0px);
+}
+
+
 
 .card-text {
     color: #869AB8;
