@@ -1,0 +1,89 @@
+@page
+@model AvaloniaUI.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-9 mx-auto mt-5">
+      <div class="p-4 text-center mt-3">
+        <h1>Get in touch</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8  mx-auto text-center">
+      <h4 class="mb-2">Fancy a chat? Send us an email and we'll arrange a call.</h4>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-12 col-lg-10">
+
+      <!-- Form -->
+      <form method="post">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="form-group mb-5">
+
+              <!-- Label -->
+              <label asp-for="ContactName">
+                Full name
+              </label>
+
+              <!-- Input -->
+              <input asp-for="ContactName" type="text" class="form-control" placeholder="Full name">
+
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-group mb-5">
+
+              <!-- Label -->
+              <label asp-for="ContactEmail">
+                Email
+              </label>
+
+              <!-- Input -->
+              <input asp-for="ContactEmail" type="email" class="form-control" placeholder="hello@domain.com">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group mb-7 mb-md-9">
+
+              <!-- Label -->
+              <label asp-for="Message">
+                What can we help you with?
+              </label>
+
+              <!-- Input -->
+              <textarea asp-for="Message" class="form-control" rows="5" placeholder="Tell us what we can help you with!"></textarea>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+          <div class="col-auto">
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary">
+              Send message
+            </button>
+
+          </div>
+        </div> 
+      </form>
+
+    </div>
+  </div>
+
+  </div>
+

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaUI", "AvaloniaUI\AvaloniaUI.csproj", "{867FC222-BC8A-4BCB-8E49-0038A3C64656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaUI", "AvaloniaUI\AvaloniaUI.csproj", "{867FC222-BC8A-4BCB-8E49-0038A3C64656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
