@@ -190,7 +190,7 @@ h6 {
 }
 
 .showcase .background {
-  height: 220px;
+  height: auto;
 }
 
 @media (min-width: 1400px) {
