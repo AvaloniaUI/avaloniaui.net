@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+    </style>
+    <title>Avalonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="av-bg-dark text-light form">
+
+    <div class="container-fluid px-0 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 av-bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.avaloniaui.net/">
+                    <img src="assets/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Avalonia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-md-auto">
+                        <a class="nav-link px-5" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link px-5" href="support.html">Support</a>
+                        <a class="nav-link px-5 active" href="showcase.html">Showcase</a>
+                        <a class="nav-link px-5" href="https://docs.avaloniaui.net/">Documentation</a>
+                    </div>
+
+                    <div class="float-end">
+                        <a class="btn btn-primary" href="https://github.com/AvaloniaUI/Avalonia" target="_blank"
+                            role="button">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="assets/gh-social-light.svg" />
+                                    </div>
+                                    <div class="col">Source Code</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid px-0 pb-5 text-dark background bg-light curve">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-9 mx-auto mt-5">
+                    <div class="p-4 text-center mt-5">
+                        <h1>Get in touch</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h4 class="mb-5 pb text-secondary">Fancy a chat? Send us an email and we’ll arrange a call..</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-5 pb-5 mb-5">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="FullName" class="form-label fs-6 text-secondary">Full name</label>
+                                <input type="email" class="form-control fs-6 form-control-lg" id="FullName" placeholder="Full name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="Email" class="form-label fs-6 text-secondary">Email</label>
+                                <input type="email" class="form-control fs-6 form-control-lg" id="Email" placeholder="hello@domain.com">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label fs-6 text-secondary">What can we help you with?</label>
+                                <textarea class="form-control fs-6" id="textarea" rows="6" placeholder="Tell us what we can help you with!"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-md-5 col-lg-4 col-xl-3 m-auto">
+                            <button type="button" class="btn btn-primary w-100 btn-lg">Send message</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer">
+        <div class="container mt-5 pt-5">
+            <div class="row pb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="row">
+                        <h4><b>Avalonia</b></h4>
+                        <p>The .NET XAML framework</p>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex mb-4 mb-md-0">
+                            <a href="https://github.com/avaloniaui/avalonia" target="_blank" class="me-3">
+                                <img src="assets/gh-social.svg" />
+                            </a>
+                            <a href="https://twitter.com/avaloniaui" target="_blank" class="me-3">
+                                <img src="assets/twitter-social.svg" />
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=kZCIporjJ70" target="_blank" class="me-3">
+                                <img src="assets/youtube-social.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h6>Projects</h6>
+                    <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                        <p>Avalonia</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avaloniavs" target="_blank">
+                        <p>Avalonia for VS</p>
+                    </a>
+                    <a href="https://github.com/ForNeVeR/AvaloniaRider" target="_blank">
+                        <p>Avalonia for Rider</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avalonia-dotnet-templates" target="_blank">
+                        <p>dotnet Templates</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h6>Support</h6>
+                    <a href="https://docs.avaloniaui.net/">
+                        <p>Documentation</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Consulting Services</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Commercial Support</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="foundation d-flex">
+                        <a class="ms-lg-auto" href="https://dotnetfoundation.org/">
+                            <img src="./assets/foundation.svg" alt=".NET Foundation">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
