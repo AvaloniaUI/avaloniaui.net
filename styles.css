@@ -227,3 +227,26 @@ h6 {
 .foundation img{
   width: 75px;
 }
+
+.form .background.curve {
+  height: auto;
+}
+
+.form-control::placeholder {
+  color: #869AB8;
+}
+
+.form .background {
+  position: relative;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+.form .footer {
+  padding-top: 100px;
+}
+
+.form .background .btn-primary {
+  background: #335EEA;
+  border: #335EEA;
+}
