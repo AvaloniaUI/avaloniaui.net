@@ -228,12 +228,12 @@ h6 {
   width: 75px;
 }
 
-.form .background.curve {
-  height: auto;
-}
-
 .form-control::placeholder {
   color: #869AB8;
+}
+
+.form .background.curve {
+  height: auto;
 }
 
 .form .background {
@@ -255,4 +255,79 @@ h6 {
 .form .background .btn-primary {
   background: #335EEA;
   border: #335EEA;
+}
+
+.bg-image {
+  background-size: cover;
+  margin-top: 74px;
+  padding-top: 90px;
+  padding-bottom: 140px;
+}
+
+.search-form {
+  position: relative;
+  margin-top: -30px;
+}
+
+.search-form .btn-primary {
+  background: #335EEA;
+  border: #335EEA;
+}
+
+.search-form label {
+  width: 100%;
+  padding: 18px 100px 18px 45px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 24px rgba(22, 27, 45, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.search-form input {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.search-form svg {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+}
+
+.search-form .btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search .card {
+  background-color: #1E263D;
+  box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.1);
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.search .card img {
+  height: 80px;
+}
+
+.search .card .card-text {
+  color: #CFCFCF;
+  line-height: 28px;
+}
+
+.search .curve-container {
+  margin-bottom: -40px;
+  position: relative;
+  z-index: 1;
+}
+
+.search .footer {
+  padding-top: 70px;
 }
