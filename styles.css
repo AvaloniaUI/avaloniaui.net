@@ -264,6 +264,13 @@ h6 {
   padding-bottom: 140px;
 }
 
+@media (max-width: 992px) {
+  .bg-image {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+}
+
 .search-form {
   position: relative;
   margin-top: -30px;
@@ -330,4 +337,14 @@ h6 {
 
 .search .footer {
   padding-top: 70px;
+}
+
+@media (max-width: 767px) {
+  .search .footer {
+    padding-top: 30px;
+  }
+
+  .search .background.curve {
+    height: 70px;
+  }
 }
