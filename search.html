@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+    </style>
+    <title>Avalonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="av-bg-dark text-light search">
+
+    <div class="container-fluid px-0 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 av-bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.avaloniaui.net/">
+                    <img src="assets/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Avalonia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-md-auto">
+                        <a class="nav-link px-5 active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link px-5" href="support.html">Support</a>
+                        <a class="nav-link px-5" href="https://docs.avaloniaui.net/">Documentation</a>
+                    </div>
+
+                    <div class="float-end">
+                        <a class="btn btn-primary" href="https://github.com/AvaloniaUI/Avalonia" target="_blank"
+                            role="button">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="assets/gh-social-light.svg" />
+                                    </div>
+                                    <div class="col">Source Code</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid bg-image" style="background-image: url('./assets/search/bg-image.png')">
+        <div class="row">
+            <div class="col-lg-9 mx-auto mt-5">
+                <div class="p-4 text-center mt-md-3">
+                    <h1>Avalonia Resources</h1>
+                    <h4>Find all the resources you’ll need to become an</h4>
+                    <h4>Avalonia expert</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <form class="search-form">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z" stroke="#869AB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.6249 16.6249L13.1812 13.1812" stroke="#869AB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <label>
+                        <input type="search" placeholder="Search">
+                    </label>
+                    <button class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4 pt-lg-5 mt-5 pb-5 mb-2">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="text-white fw-bolder">Getting Started Essentials</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/download.svg" width="96px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Install Avalonia</h6>
+                                    <p class="card-text">Learn how to get your system configured for Avalonia development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/templates.svg" width="80px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Install the .NET Templates</h6>
+                                    <p class="card-text">We’ve create a number of .NET templates to speed up your dev.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/migration.svg" width="92px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">WPF Migration Tips</h6>
+                                    <p class="card-text">Speed up WPF migration project with our handy set of tips and tricks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/whats-new.svg" width="80px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">What’s new</h6>
+                                    <p class="card-text">Learn about the new features and whats changed in the latest release.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #131825;" class="pt-4 pb-4">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h3 class="text-white fw-bolder">Documentation</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/api.svg" width="72px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">API Reference</h6>
+                                        <p class="card-text">API reference documentation for Avalonia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/templates.svg" width="80px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Browse the Avalonia code</h6>
+                                        <p class="card-text">Dig into the Avalonia internals and discover how it works.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/bug.svg" width="84px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Report a bug</h6>
+                                        <p class="card-text">Found a bug? Learn how to create and submit high-quality bug reports.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 mt-2 pb-5 mb-2">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="text-white fw-bolder">Tutorials</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/download.svg" width="64px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Hello World</h6>
+                                    <p class="card-text">Build a simple hello world app using either Visual Studio or JetBrains Rider.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/music-store.svg" width="80px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Music Store App</h6>
+                                    <p class="card-text">Learn how to build a modern, reactive music store application.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #131825;" class="pt-4 pb-4">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h3 class="text-white fw-bolder">Popular Guides</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/xaml.svg" width="84px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Intro to XAML</h6>
+                                        <p class="card-text">New to XAML? This guide will give you the basics needed to get started.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/mvvm.svg" width="84px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Intro to MVVM</h6>
+                                        <p class="card-text">Understand how to architect your apps with Mvvm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/rx.svg" width="84px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Intro to ReactiveUI</h6>
+                                        <p class="card-text">Discover how you can use Reactive programming with Avalonia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/navigation.svg" width="72px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Navigation Patterns</h6>
+                                        <p class="card-text">Discover how to implement common desktop navigation patterns</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                    <img class="img-fluid mx-auto mb-3" src="assets/search/publishing.svg" width="72px">
+                                    <div class="mt-auto">
+                                        <h6 class="card-title mb-3">Publishing Apps</h6>
+                                        <p class="card-text">Learn how to package and share your apps for Windows macOS and Linux.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 mt-2 pb-1 pb-lg-5 mb-2">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="text-white fw-bolder">Community</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/chat.svg" width="84px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Join the conversation</h6>
+                                    <p class="card-text">Chat with like other Avalonia developers on our Gitter channel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/sponsorship.svg" width="66px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Sponsor Avalonia</h6>
+                                    <p class="card-text">Support Avalonia by helping to pay for day-to-day expenses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/presentation.svg" width="76px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Avalonia Advocacy </h6>
+                                    <p class="card-text">Find resources to help you teach others about the benefits of Avalonia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column text-center pt-5 pb-5 px-4">
+                                <img class="img-fluid mx-auto mb-3" src="assets/search/youtube.svg" width="88px">
+                                <div class="mt-auto">
+                                    <h6 class="card-title mb-3">Avalonia on YouTube</h6>
+                                    <p class="card-text">Avalonia on YouTube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 curve-container">
+        <div class="relative pb-5">
+            <div class="background-container">
+                <div class="background curve av-bg-dark"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer">
+        <div class="container mt-5 pt-5">
+            <div class="row pb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="row">
+                        <h4><b>Avalonia</b></h4>
+                        <p>The .NET XAML framework</p>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex mb-4 mb-md-0">
+                            <a href="https://github.com/avaloniaui/avalonia" target="_blank" class="me-3">
+                                <img src="assets/gh-social.svg" />
+                            </a>
+                            <a href="https://twitter.com/avaloniaui" target="_blank" class="me-3">
+                                <img src="assets/twitter-social.svg" />
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=kZCIporjJ70" target="_blank" class="me-3">
+                                <img src="assets/youtube-social.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h6>Projects</h6>
+                    <a href="https://github.com/avaloniaui/avalonia" target="_blank">
+                        <p>Avalonia</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avaloniavs" target="_blank">
+                        <p>Avalonia for VS</p>
+                    </a>
+                    <a href="https://github.com/ForNeVeR/AvaloniaRider" target="_blank">
+                        <p>Avalonia for Rider</p>
+                    </a>
+                    <a href="https://github.com/avaloniaui/avalonia-dotnet-templates" target="_blank">
+                        <p>dotnet Templates</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h6>Support</h6>
+                    <a href="https://docs.avaloniaui.net/">
+                        <p>Documentation</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Consulting Services</p>
+                    </a>
+                    <a href="support.html">
+                        <p>Commercial Support</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                   <div class="foundation d-flex">
+                       <a class="ms-lg-auto" href="https://dotnetfoundation.org/">
+                           <img src="./assets/foundation.svg" alt=".NET Foundation">
+                       </a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

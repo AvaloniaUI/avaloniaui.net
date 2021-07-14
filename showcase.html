@@ -12,13 +12,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="apple-touch-icon" sizes="180x180" href="~/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="~/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="~/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="~/favicons/favicon.ico" />
-    <link rel="manifest" href="~/favicons/manifest.json">
-    <link rel="mask-icon" href="~/favicons/safari-pinned-tab.svg" color="#ffffff">
-    <meta name="msapplication-config" content="~/favicons/browserconfig.xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -73,8 +73,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 mx-auto text-justified">
-                    <h4 class="mb-5 pb">Thousands of apps use Avalonia to create stunning cross-platform apps. Here’s a
+                <div class="col-lg-5 mx-auto text-center">
+                    <h4 class="mb-5 pb text-secondary">Thousands of apps use Avalonia to create stunning cross-platform apps. Here’s a
                         few of our favourites.</h4>
                 </div>
             </div>
@@ -86,36 +86,128 @@
         </div>
     </div>
 
-    <div class="container-fluid px-0 text-dark mt-5 pt-5">
+    <div class="container-fluid px-0 text-dark mt-5 pt-5 mb-5 pb-2">
         <div class="container">
-            <div class="card">
-                <div class="card-body m-3">
-                    <div class="row">
-                        <div class="col-lg-6 mb-3">
-                            <div class="row">
-                                <h3>GritGene</h3>
-                                <p>GritGene is a new digital engine that is currently being built by GridWorld. The
-                                    UI, written using Avalonia, houses a real-time digital graphics engine that can
-                                    scale from low-end hardware to high-end GPU clusters running in the cloud. </p>
+            <div class="col-lg-10 offset-lg-1 mb-5">
+                    <h3 class="text-white fw-bolder">Graphics & Media</h3>
+                    <div class="card mb-3 border-0 rounded-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body pt-lg-5 px-lg-5 pb-lg-4 h-100 d-flex flex-column">
+                                    <h4 class="card-title fw-bold text-dark">GritGene</h4>
+                                    <p class="card-text text-muted">GritGene is a new digital engine that is currently being built by GridWorld. The UI, written using Avalonia, houses a real-time digital graphics engine that can scale from low-end hardware to high-end GPU clusters running in the cloud. </p>
+                                    <hr class="bg-home mt-auto">
+                                    <div class="row">
+                                        <a href="#" class="w-auto"><img src="assets/win-dark.png"  /></a>
+                                        <a href="#" class="w-auto"><img src="assets/Apple-dark.svg"  /></a>
+                                        <a href="#" class="w-auto"><img src="assets/linux-dark.svg" /></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mt-auto">
+                            <div class="col-md-6 d-flex align-items-center">
+                                <img src="assets/showcase/GritGene.png" alt="GritGene" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-lg-10 offset-lg-1 mb-5">
+                <h3 class="text-white fw-bolder">Finance</h3>
+                <div class="card mb-3 border-0 rounded-3">
+                    <div class="row g-0">
+                        <div class="col-md-6 order-md-2">
+                            <div class="card-body pt-lg-5 px-lg-5 pb-lg-4 h-100 d-flex flex-column">
+                                <h4 class="card-title fw-bold text-dark">Wasabi Wallet</h4>
+                                <p class="card-text text-muted">blah blah blah....</p>
+                                <hr class="bg-home mt-auto">
                                 <div class="row">
-                                    <img src="assets/win-dark.png" class="w-auto" />
-                                    <img src="assets/Apple-dark.svg" class="w-auto" />
-                                    <img src="assets/linux-dark.svg" class="w-auto" />
+                                    <a href="#" class="w-auto"><img src="assets/win-dark.png"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/Apple-dark.svg"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/linux-dark.svg" /></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <img src="assets/gritgene.png" class="img-fluid" />
+                        <div class="col-md-6 d-flex align-items-center order-md-1">
+                            <img src="assets/showcase/Wasabi.png" alt="Wasabi" class="w-100">
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-10 offset-lg-1 mb-5">
+                <h3 class="text-white fw-bolder">Manufacturing</h3>
+                <div class="card mb-3 border-0 rounded-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body pt-lg-5 px-lg-5 pb-lg-4 h-100 d-flex flex-column">
+                                <h4 class="card-title fw-bold text-dark">GritGene</h4>
+                                <p class="card-text text-muted">GritGene is a new digital engine that is currently being built by GridWorld. The UI, written using Avalonia, houses a real-time digital graphics engine that can scale from low-end hardware to high-end GPU clusters running in the cloud. </p>
+                                <hr class="bg-home mt-auto">
+                                <div class="row">
+                                    <a href="#" class="w-auto"><img src="assets/win-dark.png"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/Apple-dark.svg"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/linux-dark.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img src="assets/showcase/GritGene.png" alt="GritGene" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 offset-lg-1 mb-5">
+                <h3 class="text-white fw-bolder">Technology</h3>
+                <div class="card mb-3 border-0 rounded-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body pt-lg-5 px-lg-5 pb-lg-4 h-100 d-flex flex-column">
+                                <h4 class="card-title fw-bold text-dark">GritGene</h4>
+                                <p class="card-text text-muted">GritGene is a new digital engine that is currently being built by GridWorld. The UI, written using Avalonia, houses a real-time digital graphics engine that can scale from low-end hardware to high-end GPU clusters running in the cloud. </p>
+                                <hr class="bg-home mt-auto">
+                                <div class="row">
+                                    <a href="#" class="w-auto"><img src="assets/win-dark.png"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/Apple-dark.svg"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/linux-dark.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img src="assets/showcase/GritGene.png" alt="GritGene" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 offset-lg-1 mb-5">
+                <h3 class="text-white fw-bolder">Sports</h3>
+                <div class="card mb-3 border-0 rounded-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body pt-lg-5 px-lg-5 pb-lg-4 h-100 d-flex flex-column">
+                                <h4 class="card-title fw-bold text-dark">GritGene</h4>
+                                <p class="card-text text-muted">GritGene is a new digital engine that is currently being built by GridWorld. The UI, written using Avalonia, houses a real-time digital graphics engine that can scale from low-end hardware to high-end GPU clusters running in the cloud. </p>
+                                <hr class="bg-home mt-auto">
+                                <div class="row">
+                                    <a href="#" class="w-auto"><img src="assets/win-dark.png"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/Apple-dark.svg"  /></a>
+                                    <a href="#" class="w-auto"><img src="assets/linux-dark.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img src="assets/showcase/GritGene.png" alt="GritGene" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
-    <div class="container-fluid footer">
+    <footer class="container-fluid footer">
         <div class="container mt-5 pt-5">
             <div class="row pb-5">
                 <div class="col-md-6 col-lg-4">
@@ -153,12 +245,6 @@
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-2">
-                    <h6>Info</h6>
-                    <a href="showcase.html">
-                        <p>Showcase</p>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
                     <h6>Support</h6>
                     <a href="https://docs.avaloniaui.net/">
                         <p>Documentation</p>
@@ -170,9 +256,16 @@
                         <p>Commercial Support</p>
                     </a>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="foundation d-flex">
+                        <a class="ms-lg-auto" href="https://dotnetfoundation.org/">
+                            <img src="./assets/foundation.svg" alt=".NET Foundation">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"

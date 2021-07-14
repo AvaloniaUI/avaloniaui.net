@@ -24,8 +24,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 200;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.8em;
+    font-weight: 200;
+  }
 }
 
 h3 {
@@ -167,8 +174,8 @@ h6 {
 .background.curve {
   height: 98px;
   z-index: -100;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100% 75px;
+  border-bottom-right-radius: 100% 75px;
 }
 
 .support h2 {
@@ -193,6 +200,16 @@ h6 {
   height: 220px;
 }
 
+@media (min-width: 1400px) {
+  .showcase .card .col-md-6 {
+    width: 45%;
+  }
+
+  .showcase .card .col-md-6:nth-child(2) {
+    width: 55%;
+  }
+}
+
 .support .faq h4 {
   color: #161C2D;
 }
@@ -209,4 +226,129 @@ h6 {
 
 .linkcard {
 		text-decoration: none; /* no underline */
+}
+
+.foundation img{
+  width: 75px;
+}
+
+.form-control::placeholder {
+  color: #869AB8;
+}
+
+.form .background.curve {
+  height: auto;
+}
+
+.form .background {
+  position: relative;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+.form .footer {
+  padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .form .footer {
+    padding-top: 65px;
+  }
+}
+
+.form .background .btn-primary {
+  background: #335EEA;
+  border: #335EEA;
+}
+
+.bg-image {
+  background-size: cover;
+  margin-top: 74px;
+  padding-top: 90px;
+  padding-bottom: 140px;
+}
+
+@media (max-width: 992px) {
+  .bg-image {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+}
+
+.search-form {
+  position: relative;
+  margin-top: -30px;
+}
+
+.search-form .btn-primary {
+  background: #335EEA;
+  border: #335EEA;
+}
+
+.search-form label {
+  width: 100%;
+  padding: 18px 100px 18px 45px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 24px rgba(22, 27, 45, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.search-form input {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.search-form svg {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+}
+
+.search-form .btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search .card {
+  background-color: #1E263D;
+  box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.1);
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.search .card img {
+  height: 80px;
+}
+
+.search .card .card-text {
+  color: #CFCFCF;
+  line-height: 28px;
+}
+
+.search .curve-container {
+  margin-bottom: -40px;
+  position: relative;
+  z-index: 1;
+}
+
+.search .footer {
+  padding-top: 70px;
+}
+
+@media (max-width: 767px) {
+  .search .footer {
+    padding-top: 30px;
+  }
+
+  .search .background.curve {
+    height: 70px;
+  }
 }
