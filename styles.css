@@ -224,6 +224,10 @@ h6 {
   color: #384C74;
 }
 
+.linkcard {
+		text-decoration: none; /* no underline */
+}
+
 .foundation img{
   width: 75px;
 }
